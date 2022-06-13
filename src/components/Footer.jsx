@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <p>Feet go here</p>
+      <p>All the foots will go here</p>
     </footer>
   );
 };
