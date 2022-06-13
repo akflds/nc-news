@@ -22,7 +22,7 @@
             "rotation": 0,
             "text": "Route: \n/, /all",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -47,7 +47,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -75,7 +75,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -103,7 +103,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -131,7 +131,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -156,7 +156,7 @@
             "rotation": 0,
             "text": "HEADER",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -177,7 +177,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -349,7 +349,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -541,7 +541,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -688,7 +688,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -869,7 +869,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -894,7 +894,7 @@
             "rotation": 0,
             "text": "Filters",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -919,7 +919,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -944,7 +944,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -969,7 +969,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -994,7 +994,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1019,7 +1019,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1047,7 +1047,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1075,7 +1075,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1103,7 +1103,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1160,7 +1160,7 @@
               "end": "arrow"
             },
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1188,7 +1188,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1213,7 +1213,7 @@
             "rotation": 0,
             "text": "HEADER",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1238,7 +1238,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1262,7 +1262,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1409,7 +1409,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1516,7 +1516,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1608,7 +1608,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1699,7 +1699,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1727,7 +1727,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1755,7 +1755,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1783,7 +1783,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1811,7 +1811,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1836,7 +1836,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1858,7 +1858,7 @@
             "rotation": 0,
             "text": "Display Filters",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1880,7 +1880,7 @@
             "rotation": 0,
             "text": "Topics",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1905,7 +1905,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1933,7 +1933,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -1961,7 +1961,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2018,7 +2018,7 @@
               "end": "arrow"
             },
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2043,7 +2043,7 @@
             "rotation": 0,
             "text": "Route: \n/t/:topic_name",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2068,7 +2068,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2096,7 +2096,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2124,7 +2124,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2152,7 +2152,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2177,7 +2177,7 @@
             "rotation": 0,
             "text": "HEADER / TOPIC",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2198,7 +2198,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2370,7 +2370,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2562,7 +2562,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2709,7 +2709,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2890,7 +2890,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2915,7 +2915,7 @@
             "rotation": 0,
             "text": "Filters",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2940,7 +2940,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2965,7 +2965,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -2990,7 +2990,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3015,7 +3015,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3040,7 +3040,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3068,7 +3068,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3096,7 +3096,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3124,7 +3124,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3180,7 +3180,7 @@
               "end": "arrow"
             },
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3208,7 +3208,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3233,7 +3233,7 @@
             "rotation": 0,
             "text": "HEADER /  TOPIC_NAME",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3258,7 +3258,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3282,7 +3282,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3429,7 +3429,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3536,7 +3536,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3628,7 +3628,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3719,7 +3719,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3747,7 +3747,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3775,7 +3775,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3803,7 +3803,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3831,7 +3831,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3856,7 +3856,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3878,7 +3878,7 @@
             "rotation": 0,
             "text": "Display Filters",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3900,7 +3900,7 @@
             "rotation": 0,
             "text": "Topic Details",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3925,7 +3925,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3953,7 +3953,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -3981,7 +3981,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4037,7 +4037,7 @@
               "end": "arrow"
             },
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4056,13 +4056,13 @@
             "parentId": "page",
             "childIndex": 82,
             "point": [
-              485.90780612244896,
-              933.6914795918369
+              485.91,
+              933.69
             ],
             "rotation": 0,
             "text": " ",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4084,7 +4084,7 @@
             "rotation": 0,
             "text": "Route: \n/article/:article_id",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4109,7 +4109,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4137,7 +4137,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4165,7 +4165,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4193,7 +4193,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4218,7 +4218,7 @@
             "rotation": 0,
             "text": "HEADER",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4239,7 +4239,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4411,7 +4411,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4603,7 +4603,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4750,7 +4750,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4931,7 +4931,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4959,7 +4959,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -4987,7 +4987,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5012,7 +5012,7 @@
             "rotation": 0,
             "text": "HEADER / TOPIC / ARTICLE",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5037,7 +5037,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5061,7 +5061,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5208,7 +5208,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5315,7 +5315,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5407,7 +5407,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5495,7 +5495,7 @@
             "rotation": 0,
             "text": "Topic Details",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5520,7 +5520,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5545,7 +5545,7 @@
             "rotation": 0,
             "text": " ",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5570,7 +5570,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5598,7 +5598,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5626,7 +5626,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5654,7 +5654,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5682,7 +5682,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5710,7 +5710,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5738,7 +5738,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5757,13 +5757,13 @@
             "parentId": "page",
             "childIndex": 132,
             "point": [
-              2484.69505312085,
-              167.80031872509954
+              2484.7,
+              167.8
             ],
             "rotation": 0,
             "text": " ",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5788,7 +5788,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5816,7 +5816,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5844,7 +5844,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5872,7 +5872,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5900,7 +5900,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5928,7 +5928,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5953,7 +5953,7 @@
             "rotation": 0,
             "text": "Route: \n /new",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -5978,7 +5978,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6006,7 +6006,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6034,7 +6034,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6062,7 +6062,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6087,7 +6087,7 @@
             "rotation": 0,
             "text": "HEADER",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6108,7 +6108,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6280,7 +6280,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6472,7 +6472,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6619,7 +6619,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6800,7 +6800,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6828,7 +6828,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6853,7 +6853,7 @@
             "rotation": 0,
             "text": "HEADER  / NEW ARTICLE",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6878,7 +6878,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -6902,7 +6902,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7049,7 +7049,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7156,7 +7156,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7248,7 +7248,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7339,7 +7339,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7367,7 +7367,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7395,7 +7395,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7420,7 +7420,7 @@
             "rotation": 0,
             "text": " ",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7445,7 +7445,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7473,7 +7473,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7501,7 +7501,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7529,7 +7529,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7582,7 +7582,7 @@
             "rotation": 0,
             "text": "State:\nArticles = [ { } ]\nTopics = [ { } ]\n \nPage = Int\n \n ",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "medium",
               "isFilled": false,
               "dash": "draw",
@@ -7604,7 +7604,7 @@
             "rotation": 0,
             "text": "State:\nTopic = (param)\nArticles = [ { } ]\nTopics = [ { } ]\n \nPage = Int",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "medium",
               "isFilled": false,
               "dash": "draw",
@@ -7620,13 +7620,13 @@
             "parentId": "page",
             "childIndex": 176,
             "point": [
-              -312.28,
-              -316.93
+              -343.1,
+              -393.07
             ],
             "rotation": 0,
-            "text": "App level state:\nCurrnet user (context) = ID, NAME\nDark/Light = bool\nHigh constrast? = bool\nCompact/Card view = \" \"",
+            "text": "App level state:\nCurrent user (context) = ID, NAME\n \n---- Stretch ----\nDark/Light = bool\nHigh constrast? = bool\nCompact/Card view = \" \"",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "medium",
               "isFilled": false,
               "dash": "draw",
@@ -7642,13 +7642,13 @@
             "parentId": "page",
             "childIndex": 177,
             "point": [
-              102.28999999999999,
+              102.29,
               1727.18
             ],
             "rotation": 0,
             "text": "Route: \n/t/",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7673,7 +7673,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7701,7 +7701,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7729,7 +7729,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7757,7 +7757,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7782,7 +7782,7 @@
             "rotation": 0,
             "text": "HEADER / TOPIC",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7803,7 +7803,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -7975,7 +7975,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8167,7 +8167,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8314,7 +8314,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8495,7 +8495,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8520,7 +8520,7 @@
             "rotation": 0,
             "text": "Filters",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8545,7 +8545,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8570,7 +8570,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8595,7 +8595,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8620,7 +8620,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8645,7 +8645,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8673,7 +8673,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8701,7 +8701,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8729,7 +8729,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8785,7 +8785,7 @@
               "end": "arrow"
             },
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8813,7 +8813,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8838,7 +8838,7 @@
             "rotation": 0,
             "text": "HEADER / ALL TOPICS",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8863,7 +8863,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -8887,7 +8887,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9034,7 +9034,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9141,7 +9141,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9233,7 +9233,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9324,7 +9324,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9352,7 +9352,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9380,7 +9380,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9408,7 +9408,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9433,7 +9433,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9455,7 +9455,7 @@
             "rotation": 0,
             "text": "Display Filters",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9480,7 +9480,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9508,7 +9508,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9536,7 +9536,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9592,7 +9592,7 @@
               "end": "arrow"
             },
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9617,7 +9617,7 @@
             "rotation": 0,
             "text": " ",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9642,7 +9642,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9670,7 +9670,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9695,7 +9695,7 @@
             "rotation": 0,
             "text": "State:\nTopics = [ { } ]\n \nPage = Int",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "medium",
               "isFilled": false,
               "dash": "draw",
@@ -9745,7 +9745,7 @@
             "rotation": 0,
             "text": "State:\nArticle = { }\nTopic = { }\nComments = [ { } ]\n \nNew comment form states",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "medium",
               "isFilled": false,
               "dash": "draw",
@@ -9767,7 +9767,7 @@
             "rotation": 0,
             "text": "Route: \n/users",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9792,7 +9792,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9820,7 +9820,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9848,7 +9848,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9876,7 +9876,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9901,7 +9901,7 @@
             "rotation": 0,
             "text": "HEADER / TOPIC",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -9922,7 +9922,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10094,7 +10094,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10286,7 +10286,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10433,7 +10433,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10614,7 +10614,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10639,7 +10639,7 @@
             "rotation": 0,
             "text": "Filters",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10664,7 +10664,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10689,7 +10689,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10714,7 +10714,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10739,7 +10739,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10764,7 +10764,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10792,7 +10792,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10820,7 +10820,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10848,7 +10848,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10904,7 +10904,7 @@
               "end": "arrow"
             },
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10932,7 +10932,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10951,13 +10951,13 @@
             "parentId": "page",
             "childIndex": 247,
             "point": [
-              2058.7200000000003,
+              2058.72,
               1765.32
             ],
             "rotation": 0,
             "text": "HEADER / USERS",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -10982,7 +10982,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11006,7 +11006,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11153,7 +11153,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11260,7 +11260,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11352,7 +11352,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11443,7 +11443,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11471,7 +11471,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11499,7 +11499,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11527,7 +11527,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11552,7 +11552,7 @@
             "rotation": 0,
             "text": "Pagination",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11574,7 +11574,7 @@
             "rotation": 0,
             "text": "Display Filters",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11599,7 +11599,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11627,7 +11627,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11655,7 +11655,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11711,7 +11711,7 @@
               "end": "arrow"
             },
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11736,7 +11736,7 @@
             "rotation": 0,
             "text": " ",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11761,7 +11761,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11789,7 +11789,7 @@
             ],
             "rotation": 0,
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "small",
               "isFilled": false,
               "dash": "draw",
@@ -11814,7 +11814,7 @@
             "rotation": 0,
             "text": "State:\nUsers = [ { } ]\n \nPage = Int",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "medium",
               "isFilled": false,
               "dash": "draw",
@@ -11864,7 +11864,7 @@
             "rotation": 0,
             "text": "State:\n \nNew article form states",
             "style": {
-              "color": "black",
+              "color": "white",
               "size": "medium",
               "isFilled": false,
               "dash": "draw",
