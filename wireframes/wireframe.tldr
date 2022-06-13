@@ -3909,146 +3909,6 @@
               "textAlign": "middle"
             }
           },
-          "5522e8a0-0df5-42c4-0218-3dac254c1f25": {
-            "id": "5522e8a0-0df5-42c4-0218-3dac254c1f25",
-            "type": "rectangle",
-            "name": "Rectangle",
-            "parentId": "page",
-            "childIndex": 78,
-            "point": [
-              433,
-              1099.75
-            ],
-            "size": [
-              773,
-              96.5
-            ],
-            "rotation": 0,
-            "style": {
-              "color": "white",
-              "size": "small",
-              "isFilled": false,
-              "dash": "draw",
-              "scale": 1
-            },
-            "label": "ArticlePreview",
-            "labelPoint": [
-              0.5,
-              0.5
-            ]
-          },
-          "b0f8d78e-541f-4eba-3fed-6d5251ba0d9e": {
-            "id": "b0f8d78e-541f-4eba-3fed-6d5251ba0d9e",
-            "type": "rectangle",
-            "name": "Rectangle",
-            "parentId": "page",
-            "childIndex": 79,
-            "point": [
-              435.5,
-              1214.75
-            ],
-            "size": [
-              773,
-              96.5
-            ],
-            "rotation": 0,
-            "style": {
-              "color": "white",
-              "size": "small",
-              "isFilled": false,
-              "dash": "draw",
-              "scale": 1
-            },
-            "label": "ArticlePreview",
-            "labelPoint": [
-              0.5,
-              0.5
-            ]
-          },
-          "9b95998b-8a33-414e-1600-92c952cea935": {
-            "id": "9b95998b-8a33-414e-1600-92c952cea935",
-            "type": "rectangle",
-            "name": "Rectangle",
-            "parentId": "page",
-            "childIndex": 80,
-            "point": [
-              431,
-              1332.25
-            ],
-            "size": [
-              773,
-              96.5
-            ],
-            "rotation": 0,
-            "style": {
-              "color": "white",
-              "size": "small",
-              "isFilled": false,
-              "dash": "draw",
-              "scale": 1
-            },
-            "label": "ArticlePreview",
-            "labelPoint": [
-              0.5,
-              0.5
-            ]
-          },
-          "c58bf27d-e86b-4237-1836-137d1824de32": {
-            "id": "c58bf27d-e86b-4237-1836-137d1824de32",
-            "type": "arrow",
-            "name": "Arrow",
-            "parentId": "page",
-            "childIndex": 81,
-            "point": [
-              817.5,
-              1454
-            ],
-            "rotation": 0,
-            "bend": 0,
-            "handles": {
-              "start": {
-                "id": "start",
-                "index": 0,
-                "point": [
-                  0,
-                  0
-                ],
-                "canBind": true
-              },
-              "end": {
-                "id": "end",
-                "index": 1,
-                "point": [
-                  1,
-                  72.5
-                ],
-                "canBind": true
-              },
-              "bend": {
-                "id": "bend",
-                "index": 2,
-                "point": [
-                  0.5,
-                  36.25
-                ]
-              }
-            },
-            "decorations": {
-              "end": "arrow"
-            },
-            "style": {
-              "color": "white",
-              "size": "small",
-              "isFilled": false,
-              "dash": "draw",
-              "scale": 1
-            },
-            "label": "",
-            "labelPoint": [
-              0.5,
-              0.5
-            ]
-          },
           "b4094571-4ddf-4b25-29d2-5d32e598898a": {
             "id": "b4094571-4ddf-4b25-29d2-5d32e598898a",
             "type": "text",
@@ -5604,7 +5464,7 @@
               "dash": "draw",
               "scale": 1
             },
-            "label": "Comments",
+            "label": "CommentList",
             "labelPoint": [
               0.5,
               0.5
@@ -5907,34 +5767,6 @@
               "scale": 1
             },
             "label": "Leave Comment",
-            "labelPoint": [
-              0.5,
-              0.5
-            ]
-          },
-          "e0ea817f-bb51-4622-393f-6cbf188e5f08": {
-            "id": "e0ea817f-bb51-4622-393f-6cbf188e5f08",
-            "type": "rectangle",
-            "name": "Rectangle",
-            "parentId": "page",
-            "childIndex": 138,
-            "point": [
-              452.21,
-              1112.37
-            ],
-            "size": [
-              77.96,
-              66.82
-            ],
-            "rotation": 0,
-            "style": {
-              "color": "white",
-              "size": "small",
-              "isFilled": false,
-              "dash": "draw",
-              "scale": 1
-            },
-            "label": "Vote!",
             "labelPoint": [
               0.5,
               0.5
@@ -7451,35 +7283,7 @@
               "dash": "draw",
               "scale": 1
             },
-            "label": "",
-            "labelPoint": [
-              0.5,
-              0.5
-            ]
-          },
-          "e3055021-009a-45c3-047f-a3cd078c4f2b": {
-            "id": "e3055021-009a-45c3-047f-a3cd078c4f2b",
-            "type": "rectangle",
-            "name": "Rectangle",
-            "parentId": "page",
-            "childIndex": 170,
-            "point": [
-              419.8,
-              1089.09
-            ],
-            "size": [
-              791.88,
-              451.62
-            ],
-            "rotation": 0,
-            "style": {
-              "color": "white",
-              "size": "small",
-              "isFilled": false,
-              "dash": "draw",
-              "scale": 1
-            },
-            "label": "",
+            "label": "Articles",
             "labelPoint": [
               0.5,
               0.5
@@ -7576,11 +7380,11 @@
             "parentId": "page",
             "childIndex": 174,
             "point": [
-              -319.6,
-              115.95
+              -600.58,
+              79.69
             ],
             "rotation": 0,
-            "text": "State:\nArticles = [ { } ]\nTopics = [ { } ]\n \nPage = Int\n \n ",
+            "text": "State:\n \nArticles = [ { } ]\n  - Informs ArticleList, \n      which then informs ArticlePreview \n      + Vote\n  - Informs Pagination\n  - Informs filters?\n \nTopics = [ { } ]\n \nPage = Int\n \n ",
             "style": {
               "color": "white",
               "size": "medium",
@@ -7598,11 +7402,11 @@
             "parentId": "page",
             "childIndex": 175,
             "point": [
-              -290.82,
-              967.2
+              -379.65,
+              923.69
             ],
             "rotation": 0,
-            "text": "State:\nTopic = (param)\nArticles = [ { } ]\nTopics = [ { } ]\n \nPage = Int",
+            "text": "State:\nTopic = (param)\nArticles = AS ABOVE\n \nPage = Int",
             "style": {
               "color": "white",
               "size": "medium",
@@ -9648,7 +9452,7 @@
               "dash": "draw",
               "scale": 1
             },
-            "label": "",
+            "label": "TopicList",
             "labelPoint": [
               0.5,
               0.5
@@ -11767,7 +11571,7 @@
               "dash": "draw",
               "scale": 1
             },
-            "label": "",
+            "label": "UserList",
             "labelPoint": [
               0.5,
               0.5
@@ -11872,6 +11676,34 @@
               "font": "script",
               "textAlign": "start"
             }
+          },
+          "e3055021-009a-45c3-047f-a3cd078c4f2b": {
+            "id": "e3055021-009a-45c3-047f-a3cd078c4f2b",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 170,
+            "point": [
+              419.8,
+              1089.09
+            ],
+            "size": [
+              791.88,
+              451.62
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "Articles",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
           }
         },
         "bindings": {}
