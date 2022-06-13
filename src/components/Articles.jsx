@@ -23,9 +23,20 @@ const Articles = () => {
     <section>
       <h2>Latest articles</h2>
       <div className={styles.articlesContainer}>
-        {articles.map(({ article_id, title }) => {
-          return <ArticleCard key={article_id} title={title} />;
-        })}
+        {articles.map(
+          ({ article_id, title, topic, author, votes, comment_count }) => {
+            return (
+              <ArticleCard
+                key={article_id}
+                title={title}
+                topic={topic}
+                author={author}
+                votes={votes}
+                comment_count={comment_count}
+              />
+            );
+          }
+        )}
       </div>
     </section>
   );
