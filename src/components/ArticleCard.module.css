@@ -1,0 +1,15 @@
+.articleCard {
+  border: 2px solid var(--border);
+  padding: 0.5rem;
+}
+
+.articleInfo,
+.articleStats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.articleInfo .topic {
+  font-weight: bold;
+}
