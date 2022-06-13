@@ -8,17 +8,20 @@ import styles from "./Articles.module.css";
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     getArticles()
       .then((fetchedArticles) => {
         setArticles(fetchedArticles);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
 
+  if (isLoading) return <p>Loading...</p>;
   return (
     <section>
       <h2>Latest articles</h2>
