@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
+
+import ArticleCard from "./ArticleCard";
+
 import { getArticles } from "../api/api";
+
+import styles from "./Articles.module.css";
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
@@ -15,14 +20,14 @@ const Articles = () => {
   }, []);
 
   return (
-    <>
+    <section>
       <h2>Latest articles</h2>
-      <ul>
+      <div className={styles.articlesContainer}>
         {articles.map(({ article_id, title }) => {
-          return <li key={article_id}>{title}</li>;
+          return <ArticleCard key={article_id} title={title} />;
         })}
-      </ul>
-    </>
+      </div>
+    </section>
   );
 };
 
