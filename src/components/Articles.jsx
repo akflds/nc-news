@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 import ArticleCard from "./ArticleCard";
 
@@ -7,11 +8,13 @@ import { getArticles } from "../api/api";
 import styles from "./Articles.module.css";
 
 const Articles = () => {
+  const { topic } = useParams();
+
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    getArticles()
+    getArticles(topic)
       .then((fetchedArticles) => {
         setArticles(fetchedArticles);
         setIsLoading(false);
@@ -19,7 +22,7 @@ const Articles = () => {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [topic]);
 
   if (isLoading) return <p>Loading...</p>;
   return (
