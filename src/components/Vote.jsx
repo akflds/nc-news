@@ -13,6 +13,8 @@ const Vote = ({ article_id, setVotes }) => {
     setVotes((curr) => (curr += amount));
     updateVote(article_id, amount).catch((error) => {
       setVotes((curr) => (curr -= amount));
+      setVoted((curr) => !curr);
+      setVoteDiff((curr) => (curr -= amount));
     });
   };
 
