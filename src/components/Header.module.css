@@ -1,3 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header h1,
+.header h2 {
+  font-size: 2rem;
+}
+
+.header a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 600px) {
   .header {
     grid-area: header;
