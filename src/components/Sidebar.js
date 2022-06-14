@@ -9,7 +9,8 @@ import { useEffect, useState } from "react";
 
 const Sidebar = () => {
   const [topics, setTopics] = useState([]);
-  const [description, setDescription] = useState("");
+  const [topicDescription, setTopicDescription] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   const { topic } = useTopicPath("/t/:topic");
 
@@ -18,8 +19,11 @@ const Sidebar = () => {
       .then((fetchedTopics) => {
         setTopics(fetchedTopics);
         if (topic) {
-          const [{ d }] = fetchedTopics.filter((t) => t.slug === topic);
-          setDescription(d);
+          const [{ description }] = fetchedTopics.filter(
+            (t) => t.slug === topic
+          );
+          setTopicDescription(description);
+          setIsLoading(false);
         }
       })
       .catch((error) => {
@@ -27,10 +31,11 @@ const Sidebar = () => {
       });
   }, [topic]);
 
+  if (isLoading) return <p>Loading...</p>;
   return (
     <div className={styles.sidebar}>
       {topic ? (
-        <TopicDetails topic={topic} description={description} />
+        <TopicDetails topic={topic} description={topicDescription} />
       ) : (
         <TopicList topics={topics} />
       )}
