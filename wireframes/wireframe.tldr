@@ -1582,7 +1582,7 @@
             ],
             "size": [
               283.5,
-              613.5
+              235.64
             ],
             "rotation": 0,
             "style": {
@@ -1682,34 +1682,6 @@
               0.5
             ]
           },
-          "a653a9c4-eda2-4e34-10c3-c835a6836ec6": {
-            "id": "a653a9c4-eda2-4e34-10c3-c835a6836ec6",
-            "type": "rectangle",
-            "name": "Rectangle",
-            "parentId": "page",
-            "childIndex": 34,
-            "point": [
-              435,
-              747
-            ],
-            "size": [
-              771,
-              29
-            ],
-            "rotation": 0,
-            "style": {
-              "color": "white",
-              "size": "small",
-              "isFilled": false,
-              "dash": "draw",
-              "scale": 1
-            },
-            "label": "Footer",
-            "labelPoint": [
-              0.5,
-              0.5
-            ]
-          },
           "6c18fa40-df43-470f-04fe-a78a992eb0e3": {
             "id": "6c18fa40-df43-470f-04fe-a78a992eb0e3",
             "type": "text",
@@ -1717,8 +1689,8 @@
             "parentId": "page",
             "childIndex": 37,
             "point": [
-              1340.61,
-              410.9
+              1331.3,
+              254.54
             ],
             "rotation": 0,
             "text": "Topics",
@@ -5157,8 +5129,8 @@
             "parentId": "page",
             "childIndex": 134,
             "point": [
-              69.43,
-              319.47
+              58.93,
+              321.97
             ],
             "size": [
               63.78,
@@ -10882,6 +10854,34 @@
               "scale": 1
             },
             "label": "Articles",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "4f96219c-8782-40a6-1b68-c23f4fbfd927": {
+            "id": "4f96219c-8782-40a6-1b68-c23f4fbfd927",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 277,
+            "point": [
+              1226.9,
+              412.04
+            ],
+            "size": [
+              283.78,
+              329.76
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "Footer",
             "labelPoint": [
               0.5,
               0.5
