@@ -7,6 +7,7 @@ import Article from "./components/Article";
 import Footer from "./components/Footer";
 
 import "./App.css";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
       <Sidebar />
       <Routes>
         <Route path="/" element={<Articles />} />
-        <Route path="/all" element={<Articles />} />
         <Route path="/:topic" element={<Articles />} />
         <Route path="/:topic/article/:article_id" element={<Article />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
