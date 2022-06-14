@@ -23,9 +23,9 @@ const Articles = () => {
 
   if (isLoading) return <p>Loading...</p>;
   return (
-    <section>
+    <section className={styles.articles}>
       <h2>Latest articles</h2>
-      <div className={styles.articlesContainer}>
+      <div className={styles.articleList}>
         {articles.map(
           ({ article_id, title, topic, author, votes, comment_count }) => {
             return (
