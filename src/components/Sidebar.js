@@ -41,7 +41,7 @@ const Sidebar = () => {
 
   if (isLoading) return <Loading />;
   return (
-    <div className={styles.sidebar}>
+    <nav className={styles.sidebar}>
       {topic && !isError ? (
         <>
           <TopicDetails topic={topic} description={topicDescription} />
@@ -50,7 +50,7 @@ const Sidebar = () => {
       ) : (
         <TopicList topics={topics} />
       )}
-    </div>
+    </nav>
   );
 };
 
