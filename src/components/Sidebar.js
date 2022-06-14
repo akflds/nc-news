@@ -23,8 +23,8 @@ const Sidebar = () => {
             (t) => t.slug === topic
           );
           setTopicDescription(description);
-          setIsLoading(false);
         }
+        setIsLoading(false);
       })
       .catch((error) => {
         console.log(error);
