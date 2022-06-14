@@ -34,6 +34,7 @@ const Articles = () => {
             return (
               <ArticleCard
                 key={article_id}
+                article_id={article_id}
                 title={title}
                 topic={topic}
                 author={author}

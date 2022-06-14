@@ -7,17 +7,20 @@ const Article = () => {
   const [article, setArticle] = useState({});
   const { topic, article_id } = useParams();
   const [isError, setIsError] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     getArticle(article_id).then((fetchedArticle) => {
       setArticle(fetchedArticle);
+      setIsLoading(false);
     });
   }, [article_id]);
 
   useEffect(() => {
     setIsError(topic !== article.topic);
-  }, [topic, article_id]);
+  }, [topic, article]);
 
+  if (isLoading) return <p>Loading...</p>;
   if (isError) return <p>Article not found!</p>;
   return (
     <section className={styles.articleContainer}>

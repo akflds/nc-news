@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Articles />} />
         <Route path="/all" element={<Articles />} />
         <Route path="/t/:topic" element={<Articles />} />
-        <Route path="/t/:topic/article/:article_id" element={<Article />} />
+        <Route path="/t/:topic/:article_id" element={<Article />} />
       </Routes>
       <Footer />
     </div>
