@@ -6,6 +6,7 @@ import ArticleCard from "./ArticleCard";
 import { getArticles } from "../api/api";
 
 import styles from "./Articles.module.css";
+import Loading from "./Loading";
 
 const Articles = () => {
   const { topic } = useParams();
@@ -24,7 +25,7 @@ const Articles = () => {
       });
   }, [topic]);
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <Loading />;
   return (
     <section className={styles.articles}>
       <h2>Latest articles</h2>

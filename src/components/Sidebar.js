@@ -6,6 +6,7 @@ import TopicList from "./TopicList";
 
 import styles from "./Sidebar.module.css";
 import { useEffect, useState } from "react";
+import Loading from "./Loading";
 
 const Sidebar = () => {
   const [topics, setTopics] = useState([]);
@@ -31,7 +32,7 @@ const Sidebar = () => {
       });
   }, [topic]);
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <Loading />;
   return (
     <div className={styles.sidebar}>
       {topic ? (
