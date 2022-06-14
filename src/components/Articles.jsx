@@ -7,12 +7,18 @@ import { getArticles } from "../api/api";
 
 import styles from "./Articles.module.css";
 import Loading from "./Loading";
+import NotFound from "./NotFound";
 
 const Articles = () => {
   const { topic } = useParams();
 
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
+
+  useEffect(() => {
+    setIsError(false);
+  }, [topic]);
 
   useEffect(() => {
     getArticles(topic)
@@ -21,10 +27,11 @@ const Articles = () => {
         setIsLoading(false);
       })
       .catch((error) => {
-        console.log(error);
+        setIsError(true);
       });
   }, [topic]);
 
+  if (isError) return <NotFound />;
   if (isLoading) return <Loading />;
   return (
     <section className={styles.articles}>

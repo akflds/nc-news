@@ -11,7 +11,7 @@ const ArticleCard = ({
 }) => {
   return (
     <article className={styles.articleCard}>
-      <Link to={`/t/${topic}/${article_id}`}>
+      <Link to={`/${topic}/article/${article_id}`}>
         <h3>{title}</h3>
       </Link>
       <div className={styles.articleInfo}>
