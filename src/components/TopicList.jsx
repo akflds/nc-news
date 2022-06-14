@@ -8,7 +8,7 @@ const TopicList = ({ topics }) => {
       <ul className={styles.topicsList}>
         {topics.map(({ slug }) => {
           return (
-            <Link key={slug} to={`/t/${slug}`}>
+            <Link key={slug} to={`/${slug}`}>
               <li>{slug}</li>
             </Link>
           );

@@ -1,0 +1,11 @@
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .articleContainer {
+    grid-area: main;
+  }
+}

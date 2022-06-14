@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 import useTopicPath from "../hooks/useTopicPath";
 
 const Header = () => {
-  const { topic } = useTopicPath("/t/:topic");
+  const { topic } = useTopicPath("/:topic");
 
   return (
     <header className={styles.header}>

@@ -1,9 +1,19 @@
+import { Link } from "react-router-dom";
 import styles from "./ArticleCard.module.css";
 
-const ArticleCard = ({ title, author, topic, votes, comment_count }) => {
+const ArticleCard = ({
+  article_id,
+  title,
+  author,
+  topic,
+  votes,
+  comment_count,
+}) => {
   return (
     <article className={styles.articleCard}>
-      <h3>{title}</h3>
+      <Link to={`/${topic}/article/${article_id}`}>
+        <h3>{title}</h3>
+      </Link>
       <div className={styles.articleInfo}>
         <p>Author: {author}</p>
         <p>
