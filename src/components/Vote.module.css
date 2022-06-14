@@ -11,4 +11,13 @@
   background-color: var(--bg);
   color: var(--text);
   font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.voteContainer button:disabled {
+  background-color: lightgray;
+}
+
+.voteContainer .clicked {
+  background-color: lightpink;
 }
