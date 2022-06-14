@@ -43,13 +43,9 @@ const Sidebar = () => {
   return (
     <nav className={styles.sidebar}>
       {topic && !isError ? (
-        <>
-          <TopicDetails topic={topic} description={topicDescription} />
-          <TopicList topics={topics} />
-        </>
-      ) : (
-        <TopicList topics={topics} />
-      )}
+        <TopicDetails topic={topic} description={topicDescription} />
+      ) : null}
+      <TopicList topics={topics} />
     </nav>
   );
 };
