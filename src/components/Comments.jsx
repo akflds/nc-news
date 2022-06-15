@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { getComments } from "../api/api";
 import styles from "./Comments.module.css";
 import Loading from "./Loading";
@@ -6,7 +7,8 @@ import NotFound from "./NotFound";
 import Comment from "./Comment";
 import NewComment from "./NewComment";
 
-const Comments = ({ article_id }) => {
+const Comments = () => {
+  const { article_id } = useParams();
   const [comments, setComments] = useState([]);
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);

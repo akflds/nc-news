@@ -41,7 +41,7 @@ const Article = () => {
         </div>
         <p>{article.body}</p>
       </article>
-      <Comments article_id={article_id} />
+      <Comments />
     </div>
   );
 };

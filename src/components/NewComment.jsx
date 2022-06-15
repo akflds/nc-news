@@ -1,8 +1,10 @@
 import { useState } from "react";
 import styles from "./NewComment.module.css";
+import NewCommentForm from "./NewCommentForm";
 
 const NewComment = () => {
   const [showPostCommentForm, setShowPostCommentForm] = useState(false);
+
   return (
     <section>
       <button
@@ -13,7 +15,7 @@ const NewComment = () => {
       >
         {showPostCommentForm ? "Hide new comment" : "New comment"}
       </button>
-      {showPostCommentForm ? <h3>Comments go here</h3> : null}
+      {showPostCommentForm ? <NewCommentForm /> : null}
     </section>
   );
 };
