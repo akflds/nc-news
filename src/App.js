@@ -21,20 +21,14 @@ function App() {
         <Header />
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Articles />} />
-          <Route
-            path="/hot"
-            element={<Articles sort_by={"comment_count"} order={"desc"} />}
-          />
-          <Route
-            path="/new"
-            element={<Articles sort_by={"created_at"} order={"desc"} />}
-          />
-          <Route
-            path="/top"
-            element={<Articles sort_by={"votes"} order={"desc"} />}
-          />
-          <Route path="/topic/:topic" element={<Articles />} />
+          <Route path="/">
+            <Route index element={<Articles />} />
+            <Route path=":sort" element={<Articles />} />
+          </Route>
+          <Route path="/topic/:topic">
+            <Route index element={<Articles />} />
+            <Route path=":sort" element={<Articles />} />
+          </Route>
           <Route
             path="/topic/:topic/article/:article_id"
             element={<Article />}
