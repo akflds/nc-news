@@ -10,18 +10,31 @@ const Comments = ({ article_id }) => {
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [showComments, setShowComments] = useState(false);
+  const [page, setPage] = useState(0);
+  const [loadedAllComments, setLoadedAllComments] = useState(false);
 
+  // preloads initial comments behind button
   useEffect(() => {
-    getComments(article_id)
+    getComments(article_id, page)
       .then((fetchedComments) => {
-        setComments(fetchedComments);
+        if (fetchedComments.length === 0) {
+          setLoadedAllComments(true);
+        }
+        // handles the initial double render as page is set
+        setComments((curr) => {
+          if (JSON.stringify(curr) !== JSON.stringify(fetchedComments)) {
+            return [...curr, ...fetchedComments];
+          }
+          return curr;
+        });
+
         setIsLoading(false);
       })
       .catch((error) => {
         setIsLoading(false);
         setIsError(true);
       });
-  }, [article_id]);
+  }, [article_id, page]);
 
   if (isError) return <NotFound />;
   if (isLoading) return <Loading />;
@@ -40,19 +53,35 @@ const Comments = ({ article_id }) => {
       </button>
 
       {showComments ? (
-        <ul>
-          {comments.map(({ comment_id, author, body, votes }) => {
-            return (
-              <Comment
-                key={comment_id}
-                comment_id={comment_id}
-                author={author}
-                body={body}
-                votes={votes}
-              />
-            );
-          })}
-        </ul>
+        <>
+          <ul>
+            {comments.map(({ comment_id, author, body, votes }) => {
+              return (
+                <Comment
+                  key={comment_id}
+                  comment_id={comment_id}
+                  author={author}
+                  body={body}
+                  votes={votes}
+                />
+              );
+            })}
+          </ul>
+          {!loadedAllComments ? (
+            <button
+              className={styles.showMoreButton}
+              onClick={() => {
+                setPage((curr) => curr + 1);
+              }}
+            >
+              See more
+            </button>
+          ) : (
+            <p className={styles.theEnd}>
+              {comments.length ? "You reached the end!" : "No comments... yet!"}
+            </p>
+          )}
+        </>
       ) : null}
     </section>
   );

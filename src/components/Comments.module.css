@@ -5,12 +5,18 @@
   gap: 0.5rem;
 }
 
-.showCommentsButton {
+.showCommentsButton,
+.showMoreButton {
   width: 100%;
   padding: 0.5rem;
   border: 2px solid var(--border);
   background-color: var(--bg);
   font-size: 1.2rem;
+}
+
+.theEnd {
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 600px) {
