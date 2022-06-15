@@ -10,6 +10,7 @@ const ArticleCard = ({
   comment_count,
   isLoading,
 }) => {
+  // TODO: Improve layout of this component, include date?
   return (
     <article
       className={`${styles.articleCard} ${

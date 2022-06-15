@@ -1,17 +1,22 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { getComments } from "../api/api";
 import styles from "./Comments.module.css";
 import Loading from "./Loading";
 import NotFound from "./NotFound";
 import Comment from "./Comment";
+import NewComment from "./NewComment";
 
-const Comments = ({ article_id }) => {
+const Comments = () => {
+  const { article_id } = useParams();
   const [comments, setComments] = useState([]);
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [showComments, setShowComments] = useState(false);
   const [page, setPage] = useState(0);
   const [loadedAllComments, setLoadedAllComments] = useState(false);
+
+  // TODO: revisit this to prevent double API call when the component loads
 
   // preloads initial comments behind button
   useEffect(() => {
@@ -36,13 +41,16 @@ const Comments = ({ article_id }) => {
       });
   }, [article_id, page]);
 
+  // TODO: remove loading pattern if comments are still preloaded
   if (isError) return <NotFound />;
   if (isLoading) return <Loading />;
 
+  // TODO: Refactor buttons into components
+  // TODO: indicate loading state when requesting more comments
   return (
     <section className={styles.comments}>
       <h3>Comments</h3>
-
+      <NewComment />
       <button
         className={`${styles.showCommentsButton} ${
           showComments ? `${styles.clicked}` : ""
