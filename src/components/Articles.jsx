@@ -32,6 +32,8 @@ const Articles = () => {
   }, [topic]);
 
   if (isError) return <NotFound />;
+
+  // TODO: Add pagination/"show more" for articles
   return (
     <section className={styles.articles}>
       <h2>Latest articles</h2>

@@ -7,6 +7,8 @@ const Vote = ({ article_id, comment_id, votes }) => {
   const [voted, setVoted] = useState(false);
   const [voteDiff, setVoteDiff] = useState(0);
 
+  // TODO: track if a user has voted on an article or comment already
+
   const handleClick = (amount) => {
     setVoted((curr) => !curr);
     setVoteDiff((curr) => (curr += amount));
@@ -22,6 +24,8 @@ const Vote = ({ article_id, comment_id, votes }) => {
       setVoteDiff((curr) => (curr -= amount));
     });
   };
+
+  // TODO: button code feels quite WET, consider refactor into VoteButton
 
   return (
     <div className={styles.voteContainer}>

@@ -33,7 +33,6 @@ const Sidebar = () => {
       .catch((error) => {
         setIsLoading(false);
         setIsError(true);
-        console.log(error);
       });
   }, [topic]);
 

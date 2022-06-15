@@ -13,6 +13,8 @@ const Comments = ({ article_id }) => {
   const [page, setPage] = useState(0);
   const [loadedAllComments, setLoadedAllComments] = useState(false);
 
+  // TODO: revisit this to prevent double API call when the component loads
+
   // preloads initial comments behind button
   useEffect(() => {
     getComments(article_id, page)
@@ -36,9 +38,12 @@ const Comments = ({ article_id }) => {
       });
   }, [article_id, page]);
 
+  // TODO: remove loading pattern if comments are still preloaded
   if (isError) return <NotFound />;
   if (isLoading) return <Loading />;
 
+  // TODO: Refactor buttons into components
+  // TODO: indicate loading state when requesting more comments
   return (
     <section className={styles.comments}>
       <h3>Comments</h3>
