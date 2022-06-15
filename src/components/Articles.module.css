@@ -1,3 +1,9 @@
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .articleList {
   display: flex;
   flex-direction: column;

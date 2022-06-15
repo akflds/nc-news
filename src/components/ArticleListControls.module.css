@@ -1,0 +1,26 @@
+.articleListControls {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  gap: 0.5rem;
+}
+
+.articleListControls a {
+  border: 2px solid var(--border);
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 0.5rem 0;
+  min-width: 4rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.articleListControls a:hover {
+  background-color: var(--clicked);
+}
+
+.articleListControls .activeArticleControl {
+  font-weight: bold;
+  background-color: var(--clicked);
+}
