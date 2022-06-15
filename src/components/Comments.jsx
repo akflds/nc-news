@@ -4,6 +4,7 @@ import styles from "./Comments.module.css";
 import Loading from "./Loading";
 import NotFound from "./NotFound";
 import Comment from "./Comment";
+import NewComment from "./NewComment";
 
 const Comments = ({ article_id }) => {
   const [comments, setComments] = useState([]);
@@ -47,7 +48,7 @@ const Comments = ({ article_id }) => {
   return (
     <section className={styles.comments}>
       <h3>Comments</h3>
-
+      <NewComment />
       <button
         className={`${styles.showCommentsButton} ${
           showComments ? `${styles.clicked}` : ""
