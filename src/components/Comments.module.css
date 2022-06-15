@@ -1,4 +1,8 @@
-.comments {
+.comments ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
