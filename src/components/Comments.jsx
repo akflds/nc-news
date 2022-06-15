@@ -44,7 +44,9 @@ const Comments = ({ article_id }) => {
       <h3>Comments</h3>
 
       <button
-        className={styles.showCommentsButton}
+        className={`${styles.showCommentsButton} ${
+          showComments ? `${styles.clicked}` : ""
+        }`}
         onClick={() => {
           setShowComments((curr) => !curr);
         }}

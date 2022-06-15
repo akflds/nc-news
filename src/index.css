@@ -4,6 +4,7 @@
   --border: black;
   --loading-bg: #ffb6c1;
   --link-color: #d55d77;
+  --clicked: lightpink;
 }
 
 body {

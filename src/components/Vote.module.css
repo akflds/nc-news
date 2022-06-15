@@ -25,5 +25,5 @@
 }
 
 .voteContainer .clicked {
-  background-color: lightpink;
+  background-color: var(--clicked);
 }
