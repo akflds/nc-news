@@ -9,7 +9,7 @@ import { getArticles } from "../api/api";
 import styles from "./Articles.module.css";
 import NotFound from "./NotFound";
 
-const Articles = () => {
+const Articles = ({ sort_by, order }) => {
   const { topic } = useParams();
 
   const [articles, setArticles] = useState(Array(10).fill({}));
@@ -21,7 +21,7 @@ const Articles = () => {
   }, [topic]);
 
   useEffect(() => {
-    getArticles(topic)
+    getArticles(topic, sort_by, order)
       .then((fetchedArticles) => {
         setArticles(fetchedArticles);
         setIsLoading(false);
@@ -29,7 +29,7 @@ const Articles = () => {
       .catch((error) => {
         setIsError(true);
       });
-  }, [topic]);
+  }, [topic, sort_by, order]);
 
   if (isError) return <NotFound />;
 
