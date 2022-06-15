@@ -21,3 +21,11 @@ export const getTopics = () => {
     return data.topics;
   });
 };
+
+export const updateVote = (article_id, inc_votes) => {
+  return api
+    .patch(`/articles/${article_id}`, { inc_votes })
+    .then(({ data }) => {
+      return data.article.votes;
+    });
+};

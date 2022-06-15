@@ -1,4 +1,4 @@
-import useTopicPath from "../hooks/useTopicPath";
+import usePath from "../hooks/usePath";
 import { getTopics } from "../api/api";
 
 import TopicDetails from "./TopicDetails";
@@ -9,11 +9,12 @@ import { useEffect, useState } from "react";
 import Loading from "./Loading";
 
 const Sidebar = () => {
+  const { topic } = usePath();
+  console.log("sidebar says: ", topic);
   const [topics, setTopics] = useState([]);
   const [topicDescription, setTopicDescription] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
-  const { topic } = useTopicPath("/:topic");
 
   useEffect(() => {
     setIsError(false);
@@ -40,13 +41,12 @@ const Sidebar = () => {
 
   if (isLoading) return <Loading />;
   return (
-    <div className={styles.sidebar}>
+    <nav className={styles.sidebar}>
       {topic && !isError ? (
         <TopicDetails topic={topic} description={topicDescription} />
-      ) : (
-        <TopicList topics={topics} />
-      )}
-    </div>
+      ) : null}
+      <TopicList topics={topics} />
+    </nav>
   );
 };
 

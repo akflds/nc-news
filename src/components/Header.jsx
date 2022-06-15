@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
-import useTopicPath from "../hooks/useTopicPath";
+import usePath from "../hooks/usePath";
 
 const Header = () => {
-  const { topic } = useTopicPath("/:topic");
+  const { topic } = usePath();
 
   return (
     <header className={styles.header}>
@@ -12,7 +12,7 @@ const Header = () => {
       </Link>
       {topic ? (
         <h2>
-          / <Link to={`/t/${topic}`}>{topic}</Link>
+          / <Link to={`/${topic}`}>{topic}</Link>
         </h2>
       ) : null}
     </header>

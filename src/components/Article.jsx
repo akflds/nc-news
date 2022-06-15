@@ -4,19 +4,30 @@ import { getArticle } from "../api/api";
 import styles from "./Article.module.css";
 import Loading from "./Loading";
 import NotFound from "./NotFound";
+import Vote from "./Vote";
 
 const Article = () => {
   const [article, setArticle] = useState({});
   const { topic, article_id } = useParams();
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [votes, setVotes] = useState(0);
 
   useEffect(() => {
-    getArticle(article_id).then((fetchedArticle) => {
-      setArticle(fetchedArticle);
-      setIsLoading(false);
-    });
+    getArticle(article_id)
+      .then((fetchedArticle) => {
+        setArticle(fetchedArticle);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        setIsError(true);
+      });
   }, [article_id]);
+
+  useEffect(() => {
+    setVotes(article.votes);
+  }, [article]);
 
   useEffect(() => {
     setIsError(topic !== article.topic);
@@ -25,10 +36,15 @@ const Article = () => {
   if (isLoading) return <Loading />;
   if (isError) return <NotFound />;
   return (
-    <section className={styles.articleContainer}>
+    <article className={styles.article}>
       <h2>{article.title}</h2>
+      <div className={styles.articleVotes}>
+        <p>Votes: {votes}</p>
+        <Vote article_id={article_id} setVotes={setVotes} />
+      </div>
+
       <p>{article.body}</p>
-    </section>
+    </article>
   );
 };
 
