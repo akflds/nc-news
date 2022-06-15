@@ -12,6 +12,7 @@ const NewCommentForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setPosting(true);
+    setIsError(false);
     postComment(article_id, newComment)
       .then(() => {
         setPosted(true);
@@ -25,6 +26,11 @@ const NewCommentForm = () => {
   };
   return (
     <>
+      {isError ? (
+        <>
+          <p>Comment could not be posted. Please try again...</p>
+        </>
+      ) : null}
       {posted ? (
         <>
           <p>Comment posted!</p>
@@ -36,12 +42,15 @@ const NewCommentForm = () => {
             Comment:
             <textarea
               value={newComment}
-              onChange={(e) => setNewComment(e.target.value)}
+              onChange={(e) => {
+                setNewComment(e.target.value);
+                setIsError(false);
+              }}
               placeholder="Tell me what you're thinking..."
             ></textarea>
           </label>
           <input
-            disabled={posting}
+            disabled={posting || newComment.length === 0}
             type="submit"
             value={posting ? "Posting..." : "Submit"}
           />
