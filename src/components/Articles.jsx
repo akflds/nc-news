@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-
+import useSortPath from "../hooks/useSortPath";
 import ArticleCard from "./ArticleCard";
 
 import { getArticles } from "../api/api";
@@ -9,12 +9,13 @@ import { getArticles } from "../api/api";
 import styles from "./Articles.module.css";
 import NotFound from "./NotFound";
 
-const Articles = ({ sort_by, order }) => {
-  const { topic } = useParams();
+const Articles = () => {
+  const { topic, sort } = useParams();
 
   const [articles, setArticles] = useState(Array(10).fill({}));
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
+  const { sort_by, order } = useSortPath(sort);
 
   useEffect(() => {
     setIsError(false);
