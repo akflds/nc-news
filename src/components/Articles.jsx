@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 
 import ArticleCard from "./ArticleCard";
 
@@ -39,7 +40,7 @@ const Articles = () => {
           ({ article_id, title, topic, author, votes, comment_count }) => {
             return (
               <ArticleCard
-                key={article_id}
+                key={uuidv4()}
                 article_id={article_id}
                 title={title}
                 topic={topic}
