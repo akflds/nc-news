@@ -22,8 +22,15 @@ function App() {
         <Sidebar />
         <Routes>
           <Route path="/" element={<Articles />} />
-          <Route path="/:topic" element={<Articles />} />
-          <Route path="/:topic/article/:article_id" element={<Article />} />
+          <Route path="/hot" element={<Articles />} />
+          <Route path="/new" element={<Articles />} />
+          <Route path="/top" element={<Articles />} />
+
+          <Route path="/topic/:topic" element={<Articles />} />
+          <Route
+            path="/topic/:topic/article/:article_id"
+            element={<Article />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
