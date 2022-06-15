@@ -36,3 +36,14 @@ export const getComments = (article_id, p) => {
       return data.comments;
     });
 };
+
+export const postComment = (article_id, body) => {
+  return api
+    .post(`/articles/${article_id}/comments`, {
+      username: "tickle122",
+      body,
+    })
+    .then(({ data }) => {
+      return data.comment;
+    });
+};
