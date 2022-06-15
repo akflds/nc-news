@@ -21,12 +21,38 @@
   overflow: scroll;
 }
 
-.topicsList a {
+.topicsList li {
   border: 2px solid var(--border);
-  min-width: 5rem;
-  max-height: 80px;
+  width: 100%;
+  min-height: 1.2rem;
   padding: 0.5rem;
   text-align: center;
+}
+
+.topicsList a {
+  color: var(--link-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.loading {
+  background: var(--loading-bg);
+  opacity: 1;
+  animation: fade 5s linear infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 @media screen and (min-width: 600px) {

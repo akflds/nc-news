@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getArticle } from "../api/api";
 import styles from "./Article.module.css";
+import Comments from "./Comments";
 import Loading from "./Loading";
 import NotFound from "./NotFound";
 import Vote from "./Vote";
@@ -11,7 +12,6 @@ const Article = () => {
   const { topic, article_id } = useParams();
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [votes, setVotes] = useState(0);
 
   useEffect(() => {
     getArticle(article_id)
@@ -26,25 +26,22 @@ const Article = () => {
   }, [article_id]);
 
   useEffect(() => {
-    setVotes(article.votes);
-  }, [article]);
-
-  useEffect(() => {
     setIsError(topic !== article.topic);
   }, [topic, article]);
 
   if (isLoading) return <Loading />;
   if (isError) return <NotFound />;
   return (
-    <article className={styles.article}>
-      <h2>{article.title}</h2>
-      <div className={styles.articleVotes}>
-        <p>Votes: {votes}</p>
-        <Vote article_id={article_id} setVotes={setVotes} />
-      </div>
-
-      <p>{article.body}</p>
-    </article>
+    <div className={styles.articleContainer}>
+      <article className={styles.article}>
+        <h2>{article.title}</h2>
+        <div className={styles.articleVotes}>
+          <Vote article_id={article_id} votes={article.votes} />
+        </div>
+        <p>{article.body}</p>
+      </article>
+      <Comments article_id={article_id} />
+    </div>
   );
 };
 

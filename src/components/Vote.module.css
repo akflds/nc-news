@@ -3,10 +3,16 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.voteButtonContainer {
+  display: flex;
+  flex-direction: row;
   gap: 0.5rem;
 }
 
-.voteContainer button {
+.voteButtonContainer button {
   border: 2px solid var(--border);
   background-color: var(--bg);
   color: var(--text);
@@ -19,5 +25,5 @@
 }
 
 .voteContainer .clicked {
-  background-color: lightpink;
+  background-color: var(--clicked);
 }

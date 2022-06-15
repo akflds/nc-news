@@ -1,0 +1,9 @@
+.commentContainer {
+  padding: 0.5rem;
+  list-style: none;
+  border: 2px solid var(--border);
+}
+
+.author {
+  font-weight: bold;
+}

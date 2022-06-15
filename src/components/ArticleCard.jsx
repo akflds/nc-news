@@ -8,10 +8,18 @@ const ArticleCard = ({
   topic,
   votes,
   comment_count,
+  isLoading,
 }) => {
   return (
-    <article className={styles.articleCard}>
-      <Link to={`/${topic}/article/${article_id}`}>
+    <article
+      className={`${styles.articleCard} ${
+        isLoading ? `${styles.loading}` : ""
+      }`}
+    >
+      <Link
+        className={`${isLoading ? `${styles.loading}` : ""}`}
+        to={`/${topic}/article/${article_id}`}
+      >
         <h3>{title}</h3>
       </Link>
       <div className={styles.articleInfo}>

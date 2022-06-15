@@ -22,10 +22,17 @@ export const getTopics = () => {
   });
 };
 
-export const updateVote = (article_id, inc_votes) => {
+export const updateVote = (target, id, inc_votes) => {
+  return api.patch(`/${target}/${id}`, { inc_votes }).then(({ data }) => {
+    // slice handles api path being plural, vs returned key being singular
+    return data[target.slice(0, -1)].votes;
+  });
+};
+
+export const getComments = (article_id, p) => {
   return api
-    .patch(`/articles/${article_id}`, { inc_votes })
+    .get(`/articles/${article_id}/comments`, { params: { p, limit: 5 } })
     .then(({ data }) => {
-      return data.article.votes;
+      return data.comments;
     });
 };
