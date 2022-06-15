@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { postComment } from "../api/api";
+import styles from "./NewCommentForm.module.css";
 
 const NewCommentForm = () => {
   const [newComment, setNewComment] = useState("");
@@ -15,6 +16,7 @@ const NewCommentForm = () => {
     setIsError(false);
     postComment(article_id, newComment)
       .then(() => {
+        // TODO: destructure comment and append to front of comment list? requires setComments being drilled a few levels...
         setPosted(true);
         setPosting(false);
         setNewComment("");
@@ -27,19 +29,21 @@ const NewCommentForm = () => {
   return (
     <>
       {isError ? (
-        <>
-          <p>Comment could not be posted. Please try again...</p>
-        </>
+        <div className={styles.commentError}>
+          <p>Oops! We couldn't post that right now. Please try again...</p>
+        </div>
       ) : null}
       {posted ? (
-        <>
+        <div className={styles.commentPosted}>
           <p>Comment posted!</p>
-          <button onClick={() => setPosted(false)}>Post another comment</button>
-        </>
+          <button className={styles.postAgain} onClick={() => setPosted(false)}>
+            Post another comment
+          </button>
+        </div>
       ) : (
-        <form onSubmit={handleSubmit}>
-          <label>
-            Comment:
+        <form className={styles.commentForm} onSubmit={handleSubmit}>
+          <label className={styles.commentLabel}>
+            Your comment:
             <textarea
               value={newComment}
               onChange={(e) => {
@@ -50,9 +54,10 @@ const NewCommentForm = () => {
             ></textarea>
           </label>
           <input
+            className={styles.submit}
             disabled={posting || newComment.length === 0}
             type="submit"
-            value={posting ? "Posting..." : "Submit"}
+            value={posting ? "Posting..." : "Post comment"}
           />
         </form>
       )}
