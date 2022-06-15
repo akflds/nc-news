@@ -1,3 +1,8 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .comments ul {
   padding: 0;
   display: flex;
