@@ -18,6 +18,7 @@
   background-color: var(--clicked);
 }
 
+.showCommentsButton:hover,
 .showMoreButton:hover {
   background-color: var(--clicked);
 }
