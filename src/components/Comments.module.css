@@ -5,6 +5,14 @@
   gap: 0.5rem;
 }
 
+.showCommentsButton {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--border);
+  background-color: var(--bg);
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 600px) {
   .comments {
   }

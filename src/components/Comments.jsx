@@ -9,6 +9,7 @@ const Comments = ({ article_id }) => {
   const [comments, setComments] = useState([]);
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [showComments, setShowComments] = useState(false);
 
   useEffect(() => {
     getComments(article_id)
@@ -28,19 +29,31 @@ const Comments = ({ article_id }) => {
   return (
     <section className={styles.comments}>
       <h3>Comments</h3>
-      <ul>
-        {comments.map(({ comment_id, author, body, votes }) => {
-          return (
-            <Comment
-              key={comment_id}
-              comment_id={comment_id}
-              author={author}
-              body={body}
-              votes={votes}
-            />
-          );
-        })}
-      </ul>
+
+      <button
+        className={styles.showCommentsButton}
+        onClick={() => {
+          setShowComments((curr) => !curr);
+        }}
+      >
+        {showComments ? "Hide" : "Show"} comments
+      </button>
+
+      {showComments ? (
+        <ul>
+          {comments.map(({ comment_id, author, body, votes }) => {
+            return (
+              <Comment
+                key={comment_id}
+                comment_id={comment_id}
+                author={author}
+                body={body}
+                votes={votes}
+              />
+            );
+          })}
+        </ul>
+      ) : null}
     </section>
   );
 };
