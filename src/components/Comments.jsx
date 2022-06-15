@@ -3,6 +3,7 @@ import { getComments } from "../api/api";
 import styles from "./Comments.module.css";
 import Loading from "./Loading";
 import NotFound from "./NotFound";
+import Comment from "./Comment";
 
 const Comments = ({ article_id }) => {
   const [comments, setComments] = useState([]);
@@ -13,7 +14,6 @@ const Comments = ({ article_id }) => {
     getComments(article_id)
       .then((fetchedComments) => {
         setComments(fetchedComments);
-        console.log(fetchedComments);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -29,13 +29,15 @@ const Comments = ({ article_id }) => {
     <section className={styles.comments}>
       <h3>Comments</h3>
       <ul>
-        {comments.map((comment) => {
+        {comments.map(({ comment_id, author, body, votes }) => {
           return (
-            <li key={comment.comment_id}>
-              <p>Comment by: {comment.author}</p>
-              <p>{comment.body}</p>
-              <p>Votes: {comment.votes}</p>
-            </li>
+            <Comment
+              key={comment_id}
+              comment_id={comment_id}
+              author={author}
+              body={body}
+              votes={votes}
+            />
           );
         })}
       </ul>

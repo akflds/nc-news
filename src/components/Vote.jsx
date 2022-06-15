@@ -2,7 +2,7 @@ import styles from "./Vote.module.css";
 import { updateVote } from "../api/api";
 import { useState } from "react";
 
-const Vote = ({ article_id, votes }) => {
+const Vote = ({ article_id, comment_id, votes }) => {
   const [currentVotes, setCurrentVotes] = useState(votes);
   const [voted, setVoted] = useState(false);
   const [voteDiff, setVoteDiff] = useState(0);
@@ -12,7 +12,11 @@ const Vote = ({ article_id, votes }) => {
     setVoteDiff((curr) => (curr += amount));
 
     setCurrentVotes((curr) => (curr += amount));
-    updateVote(article_id, amount).catch((error) => {
+    updateVote(
+      article_id ? "articles" : "comments",
+      article_id ? article_id : comment_id,
+      amount
+    ).catch((error) => {
       setCurrentVotes((curr) => (curr -= amount));
       setVoted((curr) => !curr);
       setVoteDiff((curr) => (curr -= amount));
