@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -6,22 +7,28 @@ import Articles from "./components/Articles";
 import Article from "./components/Article";
 import Footer from "./components/Footer";
 
+import { UserContext } from "./contexts/User";
+
 import "./App.css";
 import NotFound from "./components/NotFound";
 
 function App() {
+  const [user, setUser] = useState("tickle122");
+
   return (
-    <div className="App">
-      <Header />
-      <Sidebar />
-      <Routes>
-        <Route path="/" element={<Articles />} />
-        <Route path="/:topic" element={<Articles />} />
-        <Route path="/:topic/article/:article_id" element={<Article />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
-    </div>
+    <UserContext.Provider value={{ user, setUser }}>
+      <div className="App">
+        <Header />
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Articles />} />
+          <Route path="/:topic" element={<Articles />} />
+          <Route path="/:topic/article/:article_id" element={<Article />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </div>
+    </UserContext.Provider>
   );
 }
 

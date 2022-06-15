@@ -37,10 +37,10 @@ export const getComments = (article_id, p) => {
     });
 };
 
-export const postComment = (article_id, body) => {
+export const postComment = (article_id, username, body) => {
   return api
     .post(`/articles/${article_id}/comments`, {
-      username: "tickle122",
+      username,
       body,
     })
     .then(({ data }) => {

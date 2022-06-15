@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { postComment } from "../api/api";
+
+import { UserContext } from "../contexts/User";
+
 import styles from "./NewCommentForm.module.css";
 
 const NewCommentForm = () => {
+  const { user } = useContext(UserContext);
   const [newComment, setNewComment] = useState("");
   const { article_id } = useParams();
   const [posting, setPosting] = useState(false);
@@ -14,7 +18,7 @@ const NewCommentForm = () => {
     event.preventDefault();
     setPosting(true);
     setIsError(false);
-    postComment(article_id, newComment)
+    postComment(article_id, user, newComment)
       .then(() => {
         // TODO: destructure comment and append to front of comment list? requires setComments being drilled a few levels...
         setPosted(true);
