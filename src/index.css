@@ -1,7 +1,9 @@
 :root {
   --text: black;
-  --bg: white;
+  --bg: #fefcf6;
   --border: black;
+  --loading-bg: #ffb6c1;
+  --link-color: #d55d77;
 }
 
 body {
@@ -11,6 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
 }
 
 code {

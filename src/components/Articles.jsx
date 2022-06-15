@@ -6,13 +6,12 @@ import ArticleCard from "./ArticleCard";
 import { getArticles } from "../api/api";
 
 import styles from "./Articles.module.css";
-import Loading from "./Loading";
 import NotFound from "./NotFound";
 
 const Articles = () => {
   const { topic } = useParams();
 
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState(Array(10).fill({}));
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
@@ -32,7 +31,6 @@ const Articles = () => {
   }, [topic]);
 
   if (isError) return <NotFound />;
-  if (isLoading) return <Loading />;
   return (
     <section className={styles.articles}>
       <h2>Latest articles</h2>
@@ -48,6 +46,7 @@ const Articles = () => {
                 author={author}
                 votes={votes}
                 comment_count={comment_count}
+                isLoading={isLoading}
               />
             );
           }

@@ -29,3 +29,9 @@ export const updateVote = (article_id, inc_votes) => {
       return data.article.votes;
     });
 };
+
+export const getComments = (article_id) => {
+  return api.get(`/articles/${article_id}/comments`).then(({ data }) => {
+    return data.comments;
+  });
+};

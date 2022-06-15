@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getArticle } from "../api/api";
 import styles from "./Article.module.css";
+import Comments from "./Comments";
 import Loading from "./Loading";
 import NotFound from "./NotFound";
 import Vote from "./Vote";
@@ -36,15 +37,17 @@ const Article = () => {
   if (isLoading) return <Loading />;
   if (isError) return <NotFound />;
   return (
-    <article className={styles.article}>
-      <h2>{article.title}</h2>
-      <div className={styles.articleVotes}>
-        <p>Votes: {votes}</p>
-        <Vote article_id={article_id} setVotes={setVotes} />
-      </div>
-
-      <p>{article.body}</p>
-    </article>
+    <div className={styles.articleContainer}>
+      <article className={styles.article}>
+        <h2>{article.title}</h2>
+        <div className={styles.articleVotes}>
+          <p>Votes: {votes}</p>
+          <Vote article_id={article_id} setVotes={setVotes} />
+        </div>
+        <p>{article.body}</p>
+      </article>
+      <Comments article_id={article_id} />
+    </div>
   );
 };
 

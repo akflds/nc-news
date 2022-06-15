@@ -6,12 +6,10 @@ import TopicList from "./TopicList";
 
 import styles from "./Sidebar.module.css";
 import { useEffect, useState } from "react";
-import Loading from "./Loading";
 
 const Sidebar = () => {
   const { topic } = usePath();
-  console.log("sidebar says: ", topic);
-  const [topics, setTopics] = useState([]);
+  const [topics, setTopics] = useState(Array(3).fill([]));
   const [topicDescription, setTopicDescription] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
@@ -39,13 +37,12 @@ const Sidebar = () => {
       });
   }, [topic]);
 
-  if (isLoading) return <Loading />;
   return (
     <nav className={styles.sidebar}>
       {topic && !isError ? (
-        <TopicDetails topic={topic} description={topicDescription} />
+        <TopicDetails description={topicDescription} />
       ) : null}
-      <TopicList topics={topics} />
+      <TopicList topics={topics} isLoading={isLoading} />
     </nav>
   );
 };

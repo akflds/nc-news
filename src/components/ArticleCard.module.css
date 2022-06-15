@@ -2,6 +2,31 @@
   border: 2px solid var(--border);
   padding: 0.5rem;
 }
+.articleCard a {
+  color: var(--link-color);
+}
+
+.loading {
+  background-color: var(--loading-bg);
+  height: 10rem;
+  opacity: 1;
+  animation: fade 5s linear infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.loading h3 {
+  display: fixed;
+  min-height: 1.2rem;
+}
 
 .articleInfo,
 .articleStats {
