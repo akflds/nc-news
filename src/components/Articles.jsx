@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import useSortPath from "../hooks/useSortPath";
 import ArticleCard from "./ArticleCard";
@@ -11,11 +11,11 @@ import NotFound from "./NotFound";
 
 const Articles = () => {
   const { topic, sort } = useParams();
+  const { sort_by, order } = useSortPath(sort);
 
   const [articles, setArticles] = useState(Array(10).fill({}));
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
-  const { sort_by, order } = useSortPath(sort);
 
   useEffect(() => {
     setIsError(false);
@@ -34,10 +34,26 @@ const Articles = () => {
 
   if (isError) return <NotFound />;
 
+  let activeStyle = {
+    "font-size": "2rem",
+  };
+
   // TODO: Add pagination/"show more" for articles
   return (
     <section className={styles.articles}>
-      <h2>Latest articles</h2>
+      <h2>Articles</h2>
+      <NavLink
+        to={"/hot"}
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        Hot
+      </NavLink>
+      <NavLink
+        to={"/cold"}
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        Cold
+      </NavLink>
       <div className={styles.articleList}>
         {articles.map(
           ({ article_id, title, topic, author, votes, comment_count }) => {
