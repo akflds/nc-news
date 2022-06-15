@@ -12,7 +12,6 @@ const Article = () => {
   const { topic, article_id } = useParams();
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [votes, setVotes] = useState(0);
 
   useEffect(() => {
     getArticle(article_id)
@@ -27,10 +26,6 @@ const Article = () => {
   }, [article_id]);
 
   useEffect(() => {
-    setVotes(article.votes);
-  }, [article]);
-
-  useEffect(() => {
     setIsError(topic !== article.topic);
   }, [topic, article]);
 
@@ -41,8 +36,7 @@ const Article = () => {
       <article className={styles.article}>
         <h2>{article.title}</h2>
         <div className={styles.articleVotes}>
-          <p>Votes: {votes}</p>
-          <Vote article_id={article_id} setVotes={setVotes} />
+          <Vote article_id={article_id} votes={article.votes} />
         </div>
         <p>{article.body}</p>
       </article>
