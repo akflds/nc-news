@@ -1,4 +1,4 @@
-import { NavLink, useParams, useResolvedPath } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import styles from "./ArticleListControls.module.css";
 
 const ArticleListControls = () => {
