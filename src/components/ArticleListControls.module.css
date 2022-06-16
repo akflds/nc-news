@@ -9,11 +9,15 @@
   border: 2px solid var(--border);
   background-color: var(--bg);
   color: var(--text);
-  padding: 0.5rem 0;
-  min-width: 4rem;
-  text-align: center;
+  padding: 0.5rem;
   text-decoration: none;
   text-transform: capitalize;
+  display: inline-flex;
+  width: 100px;
+  flex-shrink: 0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .articleListControls a:hover {

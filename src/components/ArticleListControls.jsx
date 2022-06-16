@@ -3,21 +3,30 @@ import styles from "./ArticleListControls.module.css";
 
 const ArticleListControls = () => {
   const { topic } = useParams();
-  //const activeClassName = "activeControl";
   const path = topic ? `/topic/${topic}/` : `/`;
+
+  const controls = [
+    { hot: "Most comments" },
+    { cold: "Least comments" },
+    { new: "Newest" },
+    { old: "Oldest" },
+    { top: "Most votes" },
+    { bottom: "Least votes" },
+  ];
 
   return (
     <div className={styles.articleListControls}>
-      {["hot", "cold", "new", "old", "top", "bottom"].map((control) => {
+      {controls.map((control) => {
+        const [route, display] = Object.entries(control)[0];
         return (
           <NavLink
-            key={control}
+            key={route}
             className={({ isActive }) =>
               isActive ? `${styles.activeArticleControl}` : undefined
             }
-            to={path + control}
+            to={path + route}
           >
-            {control}
+            {display}
           </NavLink>
         );
       })}
