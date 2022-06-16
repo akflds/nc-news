@@ -4,6 +4,27 @@
   border: 2px solid var(--border);
 }
 
+.deleted {
+  text-align: center;
+}
+.commentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  gap: 0.5rem;
+}
+
+.commentHeader .deleteCommentButton {
+  border: 2px solid var(--border);
+  background-color: var(--bg);
+  padding: 0 0.5rem;
+}
+
+.commentHeader .deleteCommentButton:hover {
+  background-color: var(--clicked);
+}
+
 .author {
   font-weight: bold;
 }
