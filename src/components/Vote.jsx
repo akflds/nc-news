@@ -40,7 +40,7 @@ const Vote = ({ article_id, comment_id, votes }) => {
             voted ? handleClick(-1) : handleClick(1);
           }}
         >
-          Increase
+          Upvote
         </button>
         <button
           className={voted & (voteDiff < 0) ? `${styles.clicked}` : null}
@@ -49,7 +49,7 @@ const Vote = ({ article_id, comment_id, votes }) => {
             voted ? handleClick(1) : handleClick(-1);
           }}
         >
-          Decrease
+          Downvote
         </button>
       </div>
     </div>
