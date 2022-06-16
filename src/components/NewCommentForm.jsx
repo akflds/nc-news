@@ -30,6 +30,8 @@ const NewCommentForm = () => {
         setIsError(true);
       });
   };
+
+  // TODO: disable buttons if not logged in and display relevenat message (note: requires login function!)
   return (
     <>
       {isError ? (
