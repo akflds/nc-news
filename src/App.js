@@ -13,7 +13,10 @@ import "./App.css";
 import NotFound from "./components/NotFound";
 
 function App() {
-  const [user, setUser] = useState("tickle122");
+  const [user, setUser] = useState({
+    username: "tickle122",
+    name: "Tom Tickle",
+  });
 
   return (
     <UserContext.Provider value={{ user, setUser }}>

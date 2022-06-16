@@ -18,7 +18,7 @@ const NewCommentForm = () => {
     event.preventDefault();
     setPosting(true);
     setIsError(false);
-    postComment(article_id, user, newComment)
+    postComment(article_id, user.username, newComment)
       .then(() => {
         // TODO: destructure comment and append to front of comment list? requires setComments being drilled a few levels...
         setPosted(true);
