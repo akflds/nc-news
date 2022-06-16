@@ -1,3 +1,21 @@
+:root {
+  --text: black;
+  --bg: #fefcf6;
+  --border: black;
+  --loading-bg: #ffb6c1;
+  --link-color: #d55d77;
+  --clicked: lightpink;
+}
+
+[data-theme="dark"] {
+  --text: white;
+  --bg: black;
+  --border: white;
+  --loading-bg: ffb6c1;
+  --link-color: #d55d77;
+  --clicked: lightpink;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

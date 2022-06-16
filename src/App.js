@@ -33,7 +33,7 @@ function App() {
     <UserContext.Provider value={{ user, setUser }}>
       <div className="App" data-theme={theme}>
         <Header />
-        <Settings setTheme={setTheme} />
+        <Settings theme={theme} setTheme={setTheme} />
         <Sidebar />
         <Routes>
           <Route path="/">
