@@ -19,7 +19,7 @@ const ArticleCard = ({
     >
       <Link
         className={`${isLoading ? `${styles.loading}` : ""}`}
-        to={`/${topic}/article/${article_id}`}
+        to={`/topic/${topic}/article/${article_id}`}
       >
         <h3>{title}</h3>
       </Link>

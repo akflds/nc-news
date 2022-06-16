@@ -12,7 +12,7 @@ const Header = () => {
       </Link>
       {topic ? (
         <h2>
-          / <Link to={`/${topic}`}>{topic}</Link>
+          / <Link to={`/topic/${topic}`}>{topic}</Link>
         </h2>
       ) : null}
     </header>

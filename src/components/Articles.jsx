@@ -1,16 +1,18 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-
+import useSortPath from "../hooks/useSortPath";
 import ArticleCard from "./ArticleCard";
 
 import { getArticles } from "../api/api";
 
 import styles from "./Articles.module.css";
 import NotFound from "./NotFound";
+import ArticleListControls from "./ArticleListControls";
 
 const Articles = () => {
-  const { topic } = useParams();
+  const { topic, sort } = useParams();
+  const { sort_by, order } = useSortPath(sort);
 
   const [articles, setArticles] = useState(Array(10).fill({}));
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +23,7 @@ const Articles = () => {
   }, [topic]);
 
   useEffect(() => {
-    getArticles(topic)
+    getArticles(topic, sort_by, order)
       .then((fetchedArticles) => {
         setArticles(fetchedArticles);
         setIsLoading(false);
@@ -29,14 +31,15 @@ const Articles = () => {
       .catch((error) => {
         setIsError(true);
       });
-  }, [topic]);
+  }, [topic, sort_by, order]);
 
   if (isError) return <NotFound />;
 
   // TODO: Add pagination/"show more" for articles
   return (
     <section className={styles.articles}>
-      <h2>Latest articles</h2>
+      <h2>Articles</h2>
+      <ArticleListControls />
       <div className={styles.articleList}>
         {articles.map(
           ({ article_id, title, topic, author, votes, comment_count }) => {

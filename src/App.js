@@ -21,9 +21,18 @@ function App() {
         <Header />
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Articles />} />
-          <Route path="/:topic" element={<Articles />} />
-          <Route path="/:topic/article/:article_id" element={<Article />} />
+          <Route path="/">
+            <Route index element={<Articles />} />
+            <Route path=":sort" element={<Articles />} />
+          </Route>
+          <Route path="/topic/:topic">
+            <Route index element={<Articles />} />
+            <Route path=":sort" element={<Articles />} />
+          </Route>
+          <Route
+            path="/topic/:topic/article/:article_id"
+            element={<Article />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

@@ -10,7 +10,7 @@ const TopicList = ({ topics, isLoading }) => {
         {topics.map(({ slug }) => {
           return (
             <li className={isLoading ? `${styles.loading}` : ""} key={uuidv4()}>
-              <Link to={`/${slug}`}>{slug}</Link>
+              <Link to={`/topic/${slug}`}>{slug}</Link>
             </li>
           );
         })}

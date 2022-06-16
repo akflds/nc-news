@@ -8,6 +8,7 @@ const Vote = ({ article_id, comment_id, votes }) => {
   const [voteDiff, setVoteDiff] = useState(0);
 
   // TODO: track if a user has voted on an article or comment already
+  // TODO: disable votes for users own article or comment
 
   const handleClick = (amount) => {
     setVoted((curr) => !curr);
@@ -26,6 +27,7 @@ const Vote = ({ article_id, comment_id, votes }) => {
   };
 
   // TODO: button code feels quite WET, consider refactor into VoteButton
+  // TODO: check if voted is necessary or can be done entirely on voteDiff
 
   return (
     <div className={styles.voteContainer}>
