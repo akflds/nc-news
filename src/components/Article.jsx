@@ -36,7 +36,6 @@ const Article = () => {
     setIsError(topic !== article.topic);
   }, [topic, article]);
 
-  // TODO: consider replaceing isLoading pattern with loading panel as in other components
   if (isLoading) return <Loading />;
   if (isError) return <NotFound errorMessage={errorMessage} />;
   return (

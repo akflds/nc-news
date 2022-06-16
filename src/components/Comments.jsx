@@ -41,7 +41,6 @@ const Comments = () => {
       });
   }, [article_id, page]);
 
-  // TODO: remove loading pattern if comments are still preloaded
   if (isError) return <NotFound />;
   if (isLoading) return <Loading />;
 
