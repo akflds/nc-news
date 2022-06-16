@@ -19,6 +19,10 @@ const Articles = () => {
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
+    document.title = `NC News${topic ? `: ${topic}` : ""}`;
+  }, [topic]);
+
+  useEffect(() => {
     setIsError(false);
   }, [topic]);
 

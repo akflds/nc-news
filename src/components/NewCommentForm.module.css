@@ -26,8 +26,5 @@
   background-color: var(--bg);
   padding: 0.5rem;
   font-size: 1.2rem;
-}
-
-.submit:hover {
-  background: var(--clicked);
+  transition: all 0.2s;
 }

@@ -50,7 +50,7 @@ const Comments = () => {
   return (
     <section className={styles.comments}>
       <h3>Comments</h3>
-      <NewComment />
+      <NewComment setComments={setComments} />
       <button
         className={`${styles.showCommentsButton} ${
           showComments ? `${styles.clicked}` : ""
@@ -73,6 +73,7 @@ const Comments = () => {
                   author={author}
                   body={body}
                   votes={votes}
+                  setComments={setComments}
                 />
               );
             })}

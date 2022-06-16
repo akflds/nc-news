@@ -14,6 +14,10 @@ const Article = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    document.title = article.title;
+  }, [article]);
+
+  useEffect(() => {
     getArticle(article_id)
       .then((fetchedArticle) => {
         setArticle(fetchedArticle);

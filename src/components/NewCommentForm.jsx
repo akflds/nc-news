@@ -6,7 +6,7 @@ import { UserContext } from "../contexts/User";
 
 import styles from "./NewCommentForm.module.css";
 
-const NewCommentForm = () => {
+const NewCommentForm = ({ setComments }) => {
   const { user } = useContext(UserContext);
   const [newComment, setNewComment] = useState("");
   const { article_id } = useParams();
@@ -18,9 +18,11 @@ const NewCommentForm = () => {
     event.preventDefault();
     setPosting(true);
     setIsError(false);
-    postComment(article_id, user, newComment)
-      .then(() => {
-        // TODO: destructure comment and append to front of comment list? requires setComments being drilled a few levels...
+    postComment(article_id, user.username, newComment)
+      .then((postedComment) => {
+        // TODO: API returns comment with username in author field, rather than author's name
+        postedComment.author = user.name;
+        setComments((curr) => [postedComment, ...curr]);
         setPosted(true);
         setPosting(false);
         setNewComment("");
