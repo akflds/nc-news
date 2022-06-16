@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header";
+import Settings from "./components/Settings";
 import Sidebar from "./components/Sidebar";
 import Articles from "./components/Articles";
 import Article from "./components/Article";
@@ -18,10 +19,21 @@ function App() {
     name: "Tom Tickle",
   });
 
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme")
+      ? JSON.parse(localStorage.getItem("theme"))
+      : defaultDark
+      ? "dark"
+      : "light"
+  );
+
   return (
     <UserContext.Provider value={{ user, setUser }}>
-      <div className="App">
+      <div className="App" data-theme={theme}>
         <Header />
+        <Settings setTheme={setTheme} />
         <Sidebar />
         <Routes>
           <Route path="/">
