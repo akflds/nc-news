@@ -7,10 +7,12 @@ import Vote from "./Vote";
 
 const Comment = ({ comment_id, author, body, votes, setComments }) => {
   const { user } = useContext(UserContext);
+  const [confirmDelete, setConfirmDelete] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
   const [deleted, setDeleted] = useState(false);
 
   const handleDelete = () => {
+    setConfirmDelete(false);
     setIsDeleting(true);
     deleteComment(comment_id)
       .then(() => {
@@ -19,6 +21,11 @@ const Comment = ({ comment_id, author, body, votes, setComments }) => {
       .catch((error) => {
         setIsDeleting(false);
       });
+  };
+
+  const handleConfirm = () => {
+    setConfirmDelete(true);
+    setTimeout(() => setConfirmDelete(false), 2000);
   };
 
   if (deleted) {
@@ -37,13 +44,22 @@ const Comment = ({ comment_id, author, body, votes, setComments }) => {
           <span className={styles.author}>{author}</span> posted:
         </p>
         {user.name === author ? (
-          <button
-            disabled={isDeleting}
-            className={styles.deleteCommentButton}
-            onClick={handleDelete}
-          >
-            {isDeleting ? "Deleting..." : "Delete"}
-          </button>
+          confirmDelete ? (
+            <button
+              className={styles.confirmDeleteButton}
+              onClick={handleDelete}
+            >
+              Confirm Delete?
+            </button>
+          ) : (
+            <button
+              disabled={isDeleting}
+              className={styles.deleteCommentButton}
+              onClick={handleConfirm}
+            >
+              {isDeleting ? "Deleting..." : "Delete"}
+            </button>
+          )
         ) : null}
       </div>
 
