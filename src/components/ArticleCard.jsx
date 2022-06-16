@@ -24,14 +24,13 @@ const ArticleCard = ({
         <h3>{title}</h3>
       </Link>
       <div className={styles.articleInfo}>
-        <p>Author: {author}</p>
         <p>
-          Posted under <span className={styles.topic}>{topic}</span>
+          Posted by {author} in <span className={styles.topic}>{topic}</span>
         </p>
       </div>
       <div className={styles.articleStats}>
-        <p>Votes: {votes}</p>
-        <p>Comments: {comment_count}</p>
+        <p>{votes} votes</p>
+        <p>{comment_count} comments</p>
       </div>
     </article>
   );

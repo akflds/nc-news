@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import useSortPath from "../hooks/useSortPath";
 import ArticleCard from "./ArticleCard";
-
+import Loading from "./Loading";
 import { getArticles } from "../api/api";
 
 import styles from "./Articles.module.css";
@@ -14,9 +14,10 @@ const Articles = () => {
   const { topic, sort } = useParams();
   const { sort_by, order } = useSortPath(sort);
 
-  const [articles, setArticles] = useState(Array(10).fill({}));
+  const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     document.title = `NC News${topic ? `: ${topic}` : ""}`;
@@ -33,11 +34,14 @@ const Articles = () => {
         setIsLoading(false);
       })
       .catch((error) => {
+        setErrorMessage(error.response.data.msg);
         setIsError(true);
+        setIsLoading(false);
       });
   }, [topic, sort_by, order]);
 
-  if (isError) return <NotFound />;
+  if (isError) return <NotFound errorMessage={errorMessage} />;
+  if (topic && isLoading) return <Loading />;
 
   // TODO: Add pagination/"show more" for articles
   return (

@@ -12,6 +12,7 @@ const Article = () => {
   const { topic, article_id } = useParams();
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     document.title = article.title;
@@ -24,6 +25,8 @@ const Article = () => {
         setIsLoading(false);
       })
       .catch((error) => {
+        setErrorMessage(error.response.data.msg);
+
         setIsLoading(false);
         setIsError(true);
       });
@@ -33,9 +36,8 @@ const Article = () => {
     setIsError(topic !== article.topic);
   }, [topic, article]);
 
-  // TODO: consider replaceing isLoading pattern with loading panel as in other components
   if (isLoading) return <Loading />;
-  if (isError) return <NotFound />;
+  if (isError) return <NotFound errorMessage={errorMessage} />;
   return (
     <div className={styles.articleContainer}>
       <article className={styles.article}>

@@ -6,11 +6,11 @@ import Sidebar from "./components/Sidebar";
 import Articles from "./components/Articles";
 import Article from "./components/Article";
 import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 
 import { UserContext } from "./contexts/User";
 
 import "./App.css";
-import NotFound from "./components/NotFound";
 
 function App() {
   const [user, setUser] = useState({
