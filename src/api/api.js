@@ -26,7 +26,7 @@ export const getTopics = () => {
 
 export const updateVote = (target, id, inc_votes) => {
   return api.patch(`/${target}/${id}`, { inc_votes }).then(({ data }) => {
-    // slice handles api path being plural, vs returned key being singular
+    // handles key being singlular (e.g. "article")
     return data[target.slice(0, -1)].votes;
   });
 };

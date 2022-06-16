@@ -8,9 +8,9 @@ const NotFound = ({ errorMessage }) => {
 
   return (
     <section>
-      <p>Uhh oh!</p>
+      <p>Uhh oh!{!errorMessage ? " We couldn't find that." : ""}</p>
       <p>{errorMessage}</p>
-      <Link to={"/"}>Return home?</Link>
+      <Link to={"/"}>Return home</Link>
     </section>
   );
 };
