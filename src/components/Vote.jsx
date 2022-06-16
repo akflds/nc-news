@@ -8,6 +8,7 @@ const Vote = ({ article_id, comment_id, votes }) => {
   const [voteDiff, setVoteDiff] = useState(0);
 
   // TODO: track if a user has voted on an article or comment already
+  // TODO: disable votes for users own article or comment
 
   const handleClick = (amount) => {
     setVoted((curr) => !curr);
