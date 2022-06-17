@@ -20,7 +20,6 @@ const NewCommentForm = ({ setComments }) => {
     setIsError(false);
     postComment(article_id, user.username, newComment)
       .then((postedComment) => {
-        // TODO: API returns comment with username in author field, rather than author's name
         postedComment.author = user.name;
         setComments((curr) => [postedComment, ...curr]);
         setPosted(true);

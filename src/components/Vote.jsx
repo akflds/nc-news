@@ -26,8 +26,6 @@ const Vote = ({ article_id, comment_id, votes, author }) => {
     });
   };
 
-  // TODO: button code feels quite WET, consider refactor into VoteButton
-
   return (
     <div className={styles.voteContainer}>
       <p>Votes: {currentVotes}</p>
