@@ -53,7 +53,6 @@ const Articles = () => {
   if (isError) return <NotFound errorMessage={errorMessage} />;
   if (topic && isLoading) return <Loading />;
 
-  // TODO: Add pagination/"show more" for articles
   return (
     <section className={styles.articles}>
       <h2>Articles</h2>
