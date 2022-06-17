@@ -4,9 +4,9 @@ const api = axios.create({
   baseURL: "https://akflds-news-api.herokuapp.com/api",
 });
 
-export const getArticles = (topic, sort_by, order, p) => {
+export const getArticles = (topic, sort_by, order) => {
   return api
-    .get("/articles", { params: { p, topic, sort_by, order } })
+    .get("/articles", { params: { topic, sort_by, order } })
     .then(({ data }) => {
       return data.articles;
     });

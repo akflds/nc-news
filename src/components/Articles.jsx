@@ -6,20 +6,18 @@ import ArticleCard from "./ArticleCard";
 import Loading from "./Loading";
 import { getArticles } from "../api/api";
 
-import styles from "./Articles.module.css";
 import NotFound from "./NotFound";
 import ArticleListControls from "./ArticleListControls";
+
+import styles from "./Articles.module.css";
 
 const Articles = () => {
   const { topic, sort } = useParams();
   const { sort_by, order } = useSortPath(sort);
-  const [page, setPage] = useState(0);
-
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const [loadedAllArticles, setLoadedAllArticles] = useState(false);
 
   useEffect(() => {
     document.title = `NC News${topic ? `: ${topic}` : ""}`;
@@ -27,20 +25,13 @@ const Articles = () => {
 
   useEffect(() => {
     setIsError(false);
-  }, [topic]);
+    setArticles([]);
+  }, [topic, sort]);
 
   useEffect(() => {
-    getArticles(topic, sort_by, order, page)
+    getArticles(topic, sort_by, order)
       .then((fetchedArticles) => {
-        if (fetchedArticles.length === 0) {
-          setLoadedAllArticles(true);
-        }
-        setArticles((curr) => {
-          if (JSON.stringify(curr) !== JSON.stringify(fetchedArticles)) {
-            return [...curr, ...fetchedArticles];
-          }
-          return curr;
-        });
+        setArticles(fetchedArticles);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -48,7 +39,7 @@ const Articles = () => {
         setIsError(true);
         setIsLoading(false);
       });
-  }, [topic, sort_by, order, page]);
+  }, [topic, sort_by, order]);
 
   if (isError) return <NotFound errorMessage={errorMessage} />;
   if (topic && isLoading) return <Loading />;
@@ -59,7 +50,15 @@ const Articles = () => {
       <ArticleListControls />
       <div className={styles.articleList}>
         {articles.map(
-          ({ article_id, title, topic, author, votes, comment_count }) => {
+          ({
+            article_id,
+            title,
+            topic,
+            author,
+            votes,
+            comment_count,
+            created_at,
+          }) => {
             return (
               <ArticleCard
                 key={uuidv4()}
@@ -70,25 +69,12 @@ const Articles = () => {
                 votes={votes}
                 comment_count={comment_count}
                 isLoading={isLoading}
+                created_at={created_at}
               />
             );
           }
         )}
       </div>
-      {!loadedAllArticles ? (
-        <button
-          className={styles.showMoreArticles}
-          onClick={() => {
-            setPage((curr) => curr + 1);
-          }}
-        >
-          See more
-        </button>
-      ) : (
-        <p className={styles.theEnd}>
-          {articles.length ? "You reached the end!" : "No comments... yet!"}
-        </p>
-      )}
     </section>
   );
 };

@@ -2,10 +2,20 @@ import styles from "./Comment.module.css";
 import { UserContext } from "../contexts/User";
 import { useContext, useState } from "react";
 import { deleteComment } from "../api/api";
-
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
 import Vote from "./Vote";
 
-const Comment = ({ comment_id, author, body, votes, setComments }) => {
+dayjs.extend(relativeTime);
+
+const Comment = ({
+  comment_id,
+  author,
+  body,
+  votes,
+  setComments,
+  created_at,
+}) => {
   const { user } = useContext(UserContext);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -41,7 +51,8 @@ const Comment = ({ comment_id, author, body, votes, setComments }) => {
     <li className={styles.commentContainer}>
       <div className={styles.commentHeader}>
         <p>
-          <span className={styles.author}>{author}</span> posted:
+          <span className={styles.author}>{author}</span>,{" "}
+          {dayjs().to(dayjs(created_at))} commented:
         </p>
         {user.name === author ? (
           confirmDelete ? (

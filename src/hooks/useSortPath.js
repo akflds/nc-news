@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 const useSortPath = (sort) => {
-  const [sort_by, setSort] = useState("created_at");
-  const [order, setOrder] = useState("desc");
+  const [sort_by, setSort] = useState(undefined);
+  const [order, setOrder] = useState(undefined);
 
   useEffect(() => {
     switch (sort) {
@@ -31,6 +31,8 @@ const useSortPath = (sort) => {
         setOrder("asc");
         break;
       default:
+        setSort("created_at");
+        setOrder("desc");
         break;
     }
   }, [sort]);

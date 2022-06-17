@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 import styles from "./ArticleCard.module.css";
+import { UserContext } from "../contexts/User";
+import { useContext } from "react";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+dayjs.extend(relativeTime);
 
 const ArticleCard = ({
   article_id,
@@ -9,8 +14,10 @@ const ArticleCard = ({
   votes,
   comment_count,
   isLoading,
+  created_at,
 }) => {
-  // TODO: Improve layout of this component, include date?
+  const { user } = useContext(UserContext);
+
   return (
     <article
       className={`${styles.articleCard} ${
@@ -27,7 +34,9 @@ const ArticleCard = ({
       </h3>
       <div className={styles.articleInfo}>
         <p>
-          Posted by {author} in <span className={styles.topic}>{topic}</span>
+          <strong>{user.name === author ? "You" : author}</strong> posted{" "}
+          <strong>{dayjs().to(dayjs(created_at))}</strong> in{" "}
+          <strong>{topic}</strong>
         </p>
       </div>
       <div className={styles.articleStats}>

@@ -60,7 +60,7 @@ const Comments = () => {
       {showComments ? (
         <>
           <ul>
-            {comments.map(({ comment_id, author, body, votes }) => {
+            {comments.map(({ comment_id, author, body, votes, created_at }) => {
               return (
                 <Comment
                   key={comment_id}
@@ -69,6 +69,7 @@ const Comments = () => {
                   body={body}
                   votes={votes}
                   setComments={setComments}
+                  created_at={created_at}
                 />
               );
             })}

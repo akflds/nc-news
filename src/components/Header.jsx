@@ -10,14 +10,23 @@ const Header = ({ theme, setTheme }) => {
 
   return (
     <header className={styles.header}>
-      <h1>
-        <Link to="/">NC News</Link>
-      </h1>
-      {topic ? (
-        <h2>
-          / <Link to={`/topic/${topic}`}>{topic}</Link>
-        </h2>
-      ) : null}
+      <div
+        style={{
+          display: "flex ",
+          alignItems: "center",
+          gap: "0.5rem",
+          padding: "0",
+        }}
+      >
+        <h1>
+          <Link to="/">NC News</Link>
+        </h1>
+        {topic ? (
+          <h2>
+            / <Link to={`/topic/${topic}`}>{topic}</Link>
+          </h2>
+        ) : null}
+      </div>
       {width < 600 ? <Settings theme={theme} setTheme={setTheme} /> : null}
     </header>
   );
