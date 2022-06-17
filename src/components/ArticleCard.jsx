@@ -17,12 +17,14 @@ const ArticleCard = ({
         isLoading ? `${styles.loading}` : ""
       }`}
     >
-      <Link
-        className={`${isLoading ? `${styles.loading}` : ""}`}
-        to={`/topic/${topic}/article/${article_id}`}
-      >
-        <h3>{title}</h3>
-      </Link>
+      <h3>
+        <Link
+          className={`${isLoading ? `${styles.loading}` : ""}`}
+          to={`/topic/${topic}/article/${article_id}`}
+        >
+          {title}
+        </Link>
+      </h3>
       <div className={styles.articleInfo}>
         <p>
           Posted by {author} in <span className={styles.topic}>{topic}</span>

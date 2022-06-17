@@ -1,19 +1,64 @@
 .App {
+  color: var(--text);
+  background-color: var(--bg);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.AppContainer {
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem 2rem;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+button,
+input {
+  border: 2px solid var(--border);
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: all 0.2s;
+}
+
+a {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 0.5rem 0;
+}
+
+a:hover,
+button:hover,
+input:hover {
+  color: var(--clicked-text);
+  background-color: var(--clicked);
+}
+
+button:disabled,
+input:disabled {
+  border-color: var(--disabled);
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 600px) {
-  .App {
+  .AppContainer {
     max-width: 960px;
     margin: auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto 1fr;
     grid-template-areas:
-      "header settings "
+      "header settings"
       "main sidebar"
       "main footer";
   }

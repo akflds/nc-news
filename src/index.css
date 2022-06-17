@@ -5,6 +5,21 @@
   --loading-bg: #ffb6c1;
   --link-color: #d55d77;
   --clicked: lightpink;
+  --clicked-text: black;
+  --disabled: lightgray;
+  --disabled-text: white;
+}
+
+[data-theme="dark"] {
+  --text: white;
+  --bg: black;
+  --border: #d55d77;
+  --loading-bg: ffb6c1;
+  --link-color: #d55d77;
+  --clicked: lightpink;
+  --clicked-text: black;
+  --disabled: lightgray;
+  --disabled-text: white;
 }
 
 body {
@@ -14,10 +29,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

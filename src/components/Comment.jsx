@@ -64,7 +64,7 @@ const Comment = ({ comment_id, author, body, votes, setComments }) => {
       </div>
 
       <p>{body}</p>
-      <Vote comment_id={comment_id} votes={votes} />
+      <Vote comment_id={comment_id} votes={votes} author={author} />
     </li>
   );
 };

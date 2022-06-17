@@ -7,8 +7,6 @@
 
 .articleListControls a {
   border: 2px solid var(--border);
-  background-color: var(--bg);
-  color: var(--text);
   padding: 0.5rem;
   text-decoration: none;
   text-transform: capitalize;
@@ -20,11 +18,8 @@
   justify-content: center;
 }
 
-.articleListControls a:hover {
-  background-color: var(--clicked);
-}
-
 .articleListControls .activeArticleControl {
   font-weight: bold;
   background-color: var(--clicked);
+  color: var(--clicked-text);
 }

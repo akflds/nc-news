@@ -24,7 +24,8 @@
 .topicsList li {
   border: 2px solid var(--border);
   width: 100%;
-  min-height: 1.2rem;
+  min-height: 2rem;
+  min-width: 5rem;
   padding: 0.5rem;
   text-align: center;
 }
