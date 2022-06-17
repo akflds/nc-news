@@ -10,8 +10,6 @@ const Vote = ({ article_id, comment_id, votes, author }) => {
   const [currentVotes, setCurrentVotes] = useState(votes);
   const [voteDiff, setVoteDiff] = useState(0);
 
-  // TODO: track if a user has voted on an article or comment already
-
   const handleClick = (amount) => {
     setVoteDiff((curr) => (curr += amount));
 

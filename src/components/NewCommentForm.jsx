@@ -32,7 +32,6 @@ const NewCommentForm = ({ setComments }) => {
       });
   };
 
-  // TODO: disable buttons if not logged in and display relevenat message (note: requires login function!)
   return (
     <>
       {isError ? (

@@ -13,11 +13,13 @@ import ArticleListControls from "./ArticleListControls";
 const Articles = () => {
   const { topic, sort } = useParams();
   const { sort_by, order } = useSortPath(sort);
+  const [page, setPage] = useState(0);
 
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [loadedAllArticles, setLoadedAllArticles] = useState(false);
 
   useEffect(() => {
     document.title = `NC News${topic ? `: ${topic}` : ""}`;
@@ -28,9 +30,17 @@ const Articles = () => {
   }, [topic]);
 
   useEffect(() => {
-    getArticles(topic, sort_by, order)
+    getArticles(topic, sort_by, order, page)
       .then((fetchedArticles) => {
-        setArticles(fetchedArticles);
+        if (fetchedArticles.length === 0) {
+          setLoadedAllArticles(true);
+        }
+        setArticles((curr) => {
+          if (JSON.stringify(curr) !== JSON.stringify(fetchedArticles)) {
+            return [...curr, ...fetchedArticles];
+          }
+          return curr;
+        });
         setIsLoading(false);
       })
       .catch((error) => {
@@ -38,7 +48,7 @@ const Articles = () => {
         setIsError(true);
         setIsLoading(false);
       });
-  }, [topic, sort_by, order]);
+  }, [topic, sort_by, order, page]);
 
   if (isError) return <NotFound errorMessage={errorMessage} />;
   if (topic && isLoading) return <Loading />;
@@ -66,6 +76,20 @@ const Articles = () => {
           }
         )}
       </div>
+      {!loadedAllArticles ? (
+        <button
+          className={styles.showMoreArticles}
+          onClick={() => {
+            setPage((curr) => curr + 1);
+          }}
+        >
+          See more
+        </button>
+      ) : (
+        <p className={styles.theEnd}>
+          {articles.length ? "You reached the end!" : "No comments... yet!"}
+        </p>
+      )}
     </section>
   );
 };
