@@ -5,15 +5,21 @@
   --loading-bg: #ffb6c1;
   --link-color: #d55d77;
   --clicked: lightpink;
+  --clicked-text: black;
+  --disabled: lightgray;
+  --disabled-text: white;
 }
 
 [data-theme="dark"] {
   --text: white;
   --bg: black;
-  --border: white;
+  --border: #d55d77;
   --loading-bg: ffb6c1;
   --link-color: #d55d77;
   --clicked: lightpink;
+  --clicked-text: black;
+  --disabled: lightgray;
+  --disabled-text: white;
 }
 
 body {

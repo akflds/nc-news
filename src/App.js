@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -29,28 +29,35 @@ function App() {
       : "light"
   );
 
+  useEffect(() => {
+    localStorage.removeItem("theme");
+    localStorage.setItem("theme", JSON.stringify(theme));
+  }, [theme]);
+
   return (
     <UserContext.Provider value={{ user, setUser }}>
       <div className="App" data-theme={theme}>
-        <Header />
-        <Settings theme={theme} setTheme={setTheme} />
-        <Sidebar />
-        <Routes>
-          <Route path="/">
-            <Route index element={<Articles />} />
-            <Route path=":sort" element={<Articles />} />
-          </Route>
-          <Route path="/topic/:topic">
-            <Route index element={<Articles />} />
-            <Route path=":sort" element={<Articles />} />
-          </Route>
-          <Route
-            path="/topic/:topic/article/:article_id"
-            element={<Article />}
-          />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
+        <div className="AppContainer">
+          <Header />
+          <Settings theme={theme} setTheme={setTheme} />
+          <Sidebar />
+          <Routes>
+            <Route path="/">
+              <Route index element={<Articles />} />
+              <Route path=":sort" element={<Articles />} />
+            </Route>
+            <Route path="/topic/:topic">
+              <Route index element={<Articles />} />
+              <Route path=":sort" element={<Articles />} />
+            </Route>
+            <Route
+              path="/topic/:topic/article/:article_id"
+              element={<Article />}
+            />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </div>
       </div>
     </UserContext.Provider>
   );

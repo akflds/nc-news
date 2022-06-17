@@ -1,12 +1,8 @@
 .showPostCommentFormButton {
   width: 100%;
-  padding: 0.5rem;
-  border: 2px solid var(--border);
-  background-color: var(--bg);
-  font-size: 1.2rem;
-  transition: all 0.2s;
 }
 
 .clicked {
+  color: var(--clicked-text);
   background-color: var(--clicked);
 }
