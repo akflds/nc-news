@@ -8,4 +8,7 @@
   .settings {
     grid-area: settings;
   }
+  .settings button {
+    width: 100%;
+  }
 }
