@@ -6,7 +6,9 @@ const Settings = ({ theme, setTheme }) => {
 
   return (
     <div className={styles.settings}>
-      <button onClick={handleDarkMode}>Light/Dark</button>
+      <button onClick={handleDarkMode}>
+        {theme === "light" ? "Dark" : "Light"} mode
+      </button>
     </div>
   );
 };
