@@ -7,9 +7,9 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Link to="/">
-        <h1>NC News</h1>
-      </Link>
+      <h1>
+        <Link to="/">NC News</Link>
+      </h1>
       {topic ? (
         <h2>
           / <Link to={`/topic/${topic}`}>{topic}</Link>

@@ -1,14 +1,17 @@
 import styles from "./Vote.module.css";
-import { updateVote } from "../api/api";
-import { useState } from "react";
+import { UserContext } from "../contexts/User";
 
-const Vote = ({ article_id, comment_id, votes }) => {
+import { updateVote } from "../api/api";
+import { useState, useContext } from "react";
+
+const Vote = ({ article_id, comment_id, votes, author }) => {
+  const { user } = useContext(UserContext);
+
   const [currentVotes, setCurrentVotes] = useState(votes);
   const [voted, setVoted] = useState(false);
   const [voteDiff, setVoteDiff] = useState(0);
 
   // TODO: track if a user has voted on an article or comment already
-  // TODO: disable votes for users own article or comment
 
   const handleClick = (amount) => {
     setVoted((curr) => !curr);
@@ -35,7 +38,7 @@ const Vote = ({ article_id, comment_id, votes }) => {
       <div className={styles.voteButtonContainer}>
         <button
           className={voted && voteDiff > 0 ? `${styles.clicked}` : null}
-          disabled={voted && voteDiff < 0}
+          disabled={(voted && voteDiff < 0) || user.name === author}
           onClick={() => {
             voted ? handleClick(-1) : handleClick(1);
           }}
@@ -44,7 +47,7 @@ const Vote = ({ article_id, comment_id, votes }) => {
         </button>
         <button
           className={voted & (voteDiff < 0) ? `${styles.clicked}` : null}
-          disabled={voted && voteDiff > 0}
+          disabled={(voted && voteDiff > 0) || user.name === author}
           onClick={() => {
             voted ? handleClick(1) : handleClick(-1);
           }}

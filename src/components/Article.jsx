@@ -43,7 +43,11 @@ const Article = () => {
       <article className={styles.article}>
         <h2>{article.title}</h2>
         <div className={styles.articleVotes}>
-          <Vote article_id={article_id} votes={article.votes} />
+          <Vote
+            article_id={article_id}
+            votes={article.votes}
+            author={article.author}
+          />
         </div>
         <p>{article.body}</p>
       </article>

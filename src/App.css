@@ -24,10 +24,17 @@ input {
   transition: all 0.2s;
 }
 
+a {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 0.5rem 0;
+}
+
+a:hover,
 button:hover,
 input:hover {
-  background-color: var(--clicked);
   color: var(--clicked-text);
+  background-color: var(--clicked);
 }
 
 button:disabled,
@@ -35,6 +42,12 @@ input:disabled {
   border-color: var(--disabled);
   color: var(--text);
   background-color: var(--bg);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 600px) {
