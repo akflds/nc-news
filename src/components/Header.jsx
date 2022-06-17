@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import usePath from "../hooks/usePath";
+import Settings from "./Settings";
+import useWindowSize from "../hooks/useWindowSize";
 
-const Header = () => {
+const Header = ({ theme, setTheme }) => {
   const { topic } = usePath();
+  const { width } = useWindowSize();
 
   return (
     <header className={styles.header}>
@@ -15,6 +18,7 @@ const Header = () => {
           / <Link to={`/topic/${topic}`}>{topic}</Link>
         </h2>
       ) : null}
+      {width < 600 ? <Settings theme={theme} setTheme={setTheme} /> : null}
     </header>
   );
 };

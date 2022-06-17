@@ -10,6 +10,11 @@
   gap: 1rem;
 }
 
+.theEnd {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 600px) {
   .articles {
     grid-area: main;

@@ -11,9 +11,12 @@ import NotFound from "./components/NotFound";
 
 import { UserContext } from "./contexts/User";
 
+import useWindowSize from "./hooks/useWindowSize";
+
 import "./App.css";
 
 function App() {
+  const { width } = useWindowSize();
   const [user, setUser] = useState({
     username: "tickle122",
     name: "Tom Tickle",
@@ -38,8 +41,8 @@ function App() {
     <UserContext.Provider value={{ user, setUser }}>
       <div className="App" data-theme={theme}>
         <div className="AppContainer">
-          <Header />
-          <Settings theme={theme} setTheme={setTheme} />
+          <Header theme={theme} setTheme={setTheme} />
+          {width >= 600 ? <Settings theme={theme} setTheme={setTheme} /> : null}
           <Sidebar />
           <Routes>
             <Route path="/">
