@@ -19,7 +19,7 @@ npm install
 
 You can run `npm start` to launch a development version, available to you at [https://localhost/8000](http://localhost:3000/)
 
-To build the project for deployment, use `npm build`.
+To build the project for deployment, use `npm run build`.
 
 ## Thanks
 
