@@ -1,6 +1,8 @@
 # NC News
 
-Coming soon!
+The a responsive front-end, for a social news API, built with React.
+
+View a live version here: https://akflds-nc-news.netlify.app/
 
 ## Thanks
 
