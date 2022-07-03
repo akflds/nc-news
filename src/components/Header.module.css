@@ -8,7 +8,7 @@
 
 .header h1,
 .header h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .header a {
@@ -19,5 +19,9 @@
 @media screen and (min-width: 600px) {
   .header {
     grid-area: header;
+  }
+  .header h1,
+  header h2 {
+    font-size: 2rem;
   }
 }
