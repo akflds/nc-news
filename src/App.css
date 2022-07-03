@@ -25,7 +25,6 @@ input {
 }
 
 a {
-  background-color: var(--bg);
   color: var(--text);
   padding: 0.5rem 0;
 }
@@ -40,7 +39,7 @@ input:hover {
 button:disabled,
 input:disabled {
   border-color: var(--disabled);
-  color: var(--text);
+  color: var(--disabled);
   background-color: var(--bg);
 }
 
