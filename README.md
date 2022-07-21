@@ -1,11 +1,12 @@
 # NC News
 
-The a responsive front-end, for a [social news API](https://github.com/akflds/be-nc-news), built with React.
+A responsive, multi-page social news app, built using React and React Router.
 
-The front end enables you to view articles, filter by topics, display comments for each article, post and delete your own comments, vote on articles and vote on comments. 
+The app allows you to view articles, filter articles by topic, display comments for each article, post and delete your own comments, vote on articles and vote on comments. 
 
-View a live version here: https://akflds-nc-news.netlify.app/
+You can view a live version of the app, hosted on Netifly: https://akflds-nc-news.netlify.app/
 
+Article content is served from a JSON-based API, available here: https://github.com/akflds/be-nc-news
 
 ## Installation
 
